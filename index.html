@@ -16,24 +16,26 @@
 </head>
 
 <body>
-    <header>
-        <h1>
-            <a href="#"><img src="./img/logo-icon.png" alt="ふくおか餃子フェス"></a>
-        </h1>
-        <nav>
-            <ul>
-                <li><a href="#">NEWS</a></li>
-                <li><a href="#">INFO</a></li>
-                <li><a href="#">MENU</a></li>
-                <li><a href="#">ACCESS</a></li>
-                <li><a href="#">FAQ</a></li>
-            </ul>
-        </nav>
+    <header class="l-header">
+        <div class="l-header-inner">
+            <h1 class="c-logo">
+                <a href="#"><img src="./img/logo-icon.png" alt="ふくおか餃子フェス"></a>
+            </h1>
+            <nav class="c-nav">
+                <ul>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="#">INFO</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="#">ACCESS</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
         <section class="l-hero">
-            <p>2030.4.27 sun - 5.12 sun</p>
+            <p><time datetime="2030-04-27">2030.4.27 sun</time> - <time datetime="2030-05-12">5.12</time> sun</p>
             <p><img src="./img/place-logo.svg" alt="">長浜公園</p>
             <p>平日</p>
             <p>16:00-22:00</p>
@@ -41,11 +43,11 @@
             <p>11:00-22:00</p>
         </section>
 
-        <section class="l-catchcopy">
-            <h2>\ ひとくちごとに、新しい体験。/
+        <section id="l-catchcopy" class="l-catchcopy">
+            <h2 class="c-sec-title">\ ひとくちごとに、新しい体験。/
                 <img src="./img/logo-text.png" alt="ふくおか餃子フェス">
             </h2>
-            <div>
+            <div class="l-catchcopy-text">
                 <p>福岡の餃子文化が一堂に集結！</p>
                 <p>定番のご当地餃子から、驚きの創作餃子まで、
                     ここはまるで 餃子のテーマパーク。</p>
@@ -57,14 +59,12 @@
             </div>
         </section>
 
-        <section class="news">
-            <h2>NEWS</h2>
-            <a href="#">
-                <dl>
-                    <dt><time datetime="2030-02-25">2030.2.25（月）</time></dt>
-                    <dd>出店者インタビュー 博多区で人気の「博多ぎょうざ堂</dd>
-                </dl>
-            </a>
+        <section class="l-topnews">
+            <h2 class="c-sec-title">NEWS</h2>
+            <dl>
+                <dt class="c-news-date"><a href=""><time datetime="2030-02-25">2030.2.25（月）</time></a></dt>
+                <dd class="c-news-detail">出店者インタビュー 博多区で人気の「博多ぎょうざ堂</dd>
+            </dl>
 
             <a href="#">
                 <dl>
@@ -82,11 +82,11 @@
 
         </section>
 
-        <section class="information">
+        <section class="l-information" id="l-information">
             <h2>INFORMATION</h2>
-            <dl>
-                <dt>期間</dt>
-                <dd>2030年<br>
+            <dl class="c-info">
+                <dt class="c-info-title">期間</dt>
+                <dd class="c-info-detail">2030年<br>
                     4月27日(日) ～ 5月12日(日)</dd>
             </dl>
 
@@ -117,10 +117,15 @@
         </section>
 
         <!-- ↑松永 ↓大古場 -->
-        <section>
+        <section class="l-topmenu">
             <h2>MENU</h2>
-            <ul>
-                <li><img src="img/menu01.jpg" alt="肉汁あふれる焼き餃子の商品写真">肉汁あふれる焼き餃子6個入り 580円(税込)</li>
+            <ul class="">
+                <li class="c-topmenu"><img class="c-topmenu__img" src="img/menu01.jpg" alt="肉汁あふれる焼き餃子の商品写真">
+                    <div class="c-topmenu__name-price">
+                        <p class="c-topmenu__name">肉汁あふれる焼き餃子</p>
+                        <p class="c-topmenu__price">6個入り580円(税込)</p>
+                    </div>
+                </li>
                 <li><img src="img/menu02.jpg" alt="ふっくら蒸しあげ餃子の商品写真">ふっくら蒸しあげ餃子8個入り 520円(税込)</li>
                 <li><img src="img/menu03.jpg" alt="中華風スープ餃子の商品写真">中華風スープ餃子5個入り 680円(税込)</li>
                 <li><img src="img/menu04.jpg" alt="カリもち！揚げ餃子の商品写真">カリもち！揚げ餃子</li>
@@ -128,7 +133,7 @@
                 <li><img src="img/menu06.jpg" alt="素材の旨味ひきたつ水餃子の商品写真">素材の旨味ひきたつ水餃子8個入り 550円(税込)</li>
                 <li><img src="img/menu07.jpg" alt="しびうまラー油餃子の商品写真">しびうまラー油餃子6個入り 620円(税込)</li>
             </ul>
-            <a href="#">メニュー・店舗の詳細はこちら</a>
+            <a href="#" class="c-btn--yellow">メニュー・店舗の詳細はこちら</a>
         </section>
         <section class="access">
             <h2>ACCESS</h2>
@@ -136,12 +141,10 @@
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6806435.9381716335!2d121.16561437499998!3d33.59349580000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3541918916ac1a97%3A0x38ef1af8385772cc!2z6ZW35rWc5YWs5ZyS!5e0!3m2!1sja!2sjp!4v1766647331478!5m2!1sja!2sjp"
                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <dl>
-                <dt>会場</dt>
-                <dd>長浜公園
+            <dl class="c-access">
+                <dt class="c-access__title">会場</dt>
+                <dd class="c-access__detail">長浜公園
                     〒810-0073 福岡県福岡市中央区舞鶴１丁目７</dd>
-            </dl>
-            <dl>
                 <dt>アクセス</dt>
                 <dd>西鉄バス『長浜一丁目・福祉センター前・浜の町病院入口』から徒歩２分
                     地下鉄・西鉄『天神駅』から徒歩１０分</dd>
@@ -149,25 +152,25 @@
         </section>
 
         <div>
-            <a href="#">
+            <a href="#" class="c-btn--yellow">
                 <p>FAQ</p>
                 <p>よくある質問はこちら</p>
             </a>
         </div>
     </main>
-    <footer>
-        <a href="#"><img src="img/icon-mail.png" alt="">CONTACT</a>
+    <footer class="l-footer">
+        <a href="#" class="c-btn--black"><img src="img/icon-mail.png" alt="">CONTACT</a>
         <a href="tel:XXX-XXX-XXXX"><img src="img/icon-tel.png" alt="">XXX-XXX-XXXX</a>
-        <nav>
-            <ul>
-                <li><a href="#"><img src="img/sns-x.png" alt=""></a></li>
-                <li><a href="#"><img src="img/sns-insta.png" alt=""></a></li>
-                <li><a href="#"><img src="img/sns-facebook.png" alt=""></a></li>
-            </ul>
-        </nav>
-        <p>主催：ふくおか餃子FES実行委員会<br>
-            製作協力：創造社リカレントスクール福岡校<br>
-            協賛：九州餃子部</p>
+        <ul class="c-footer__sns">
+            <li class="c-sns__link"><a href="#"><img src="img/sns-x.png" alt=""></a></li>
+            <li><a href="#"><img src="img/sns-insta.png" alt=""></a></li>
+            <li><a href="#"><img src="img/sns-facebook.png" alt=""></a></li>
+        </ul>
+        <div class="c-footer__company">
+            <p>主催：ふくおか餃子FES実行委員会</p>
+            <p>製作協力：創造社リカレントスクール福岡校</p>
+            <p>協賛：九州餃子部</p>
+        </div>
         <a href="#">個人情報保護方針</a>
         <small>&copy;2030 福岡餃子FES実行委員会</small>
     </footer>
