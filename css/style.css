@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+/* 共通部分↓ */
+
+:root {
+    --gyoza-black: #131A12;
+    --gyoza-white: #FFF7F7;
+    --gyoza-beige: #FFFBEF;
+    --gyoza-red: #E22A00;
+    --gyoza-yellow: #FFE100;
+}
+
+body {
+    background-color: var(--gyoza-beige);
+}
+
+img {
+    width: 100%;
+}
+
+/* ヘッダー↓ */
+
+
+
+/* フッター↓ */
+
+
+
+/* トップページ↓ */
+
+
+
+/* メニュー↓ */
+
+
+
+/* ニュース↓ */
+
+
+
+/* FAQ↓ */
+
+
+
+/* コンタクト↓ */
+
+
+
+/* プライバシーポリシー↓ */
+
+
+
+/* レスポンシブ↓ */
