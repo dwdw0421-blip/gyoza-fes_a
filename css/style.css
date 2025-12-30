@@ -32,6 +32,255 @@ img {
 
 /* メニュー↓ */
 
+/* 仮のヘッダー黒く塗っただけ 後で消す*/
+.menu-temporary-header{
+    background-color: var(--gyoza-black);
+    height: clamp(50px, 29.91px + 5.35vw, 107px);
+    margin-bottom: clamp(90px, 58.26px + 8.45vw, 180px);
+}
+
+/* 仮のフッター黒く塗っただけ 後で消す*/
+.menu-temporary-footer{
+    background-color: var(--gyoza-black);
+    height: 424px;
+    margin-top: clamp(90px, 58.26px + 8.45vw, 180px);
+}
+
+/* レイアウト*/
+/* メニューと会場MAPのラップ調整 */
+.l-menu-wrapper , .l-map-img-wrapper{
+    width: min(960px, 89.3%);
+    margin-inline: auto;
+}
+
+/* 会場MAPのブース番号と品名リストを中央よせ */
+.l-map-list-wrapper{
+    margin-inline: auto;
+}
+
+/* MENUページ全体のフォント設定　共通設定に入れるか、休み明けに相談　*/
+.l-menu-main{
+    font-family: 'Zen Maru Gothic', sans-serif;
+    line-height: 1.44;
+}
+
+/* MENUのsectionを全体を縦並びにしてgapをつける */
+.l-menu-list{
+    display: flex;
+    flex-direction: column;
+    row-gap: clamp(80px, 51.83px + 7.51vw, 160px);
+}
+
+/* MENUセクションとMAPセクションの間隔をつける */
+.l-menu + *{
+    margin-block-start: 80px;
+}
+
+/* 会場MAPの品名リストを縦並びにして、fit-content;でボックスをテキスト幅に合わせ　gap */
+.l-map-list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+    gap: 20px;
+}
+
+/* 会場MAPセクションのGAP(16px-24px)をclampで可変 */
+.l-map{
+    display: flex;
+    flex-direction: column;
+    row-gap: clamp(40px, 25.82px + 3.76vw, 80px);
+}
+
+/* ------------------------------------------- */
+/* MENU　コンポーネント */
+
+/* 見出し　ＭＥＮＵページ用のクラス名にしてます */
+/* 共通設定に入れるか休み明けに相談 */
+/* h2のタイトル */
+.c-menu-title__main{
+    font-size: 32px;
+    font-weight: bold;
+    color: var(--gyoza-red);
+    text-align: center;
+    line-height: 1;
+}
+
+/* ｐのサブタイトル */
+.c-menu-title__sub{
+    font-size: 16px;
+    text-align: center;
+    line-height: 1;
+}
+
+/* タイトルの間隔調整 */
+.c-menu-title{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+/* メニューの次の要素とのgap調整 */
+.c-menu-title--menuGap + *{
+    margin-block-start: 80px;
+}
+
+/* 商品名のグループと写真の間にgapを入れる */
+.c-menu-card{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+/* ブース番号と　商品名・値段グループを　縦並びしてGAPをつける */
+.c-menu-card-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+/* 商品名・値段グループを　縦並びしてGAPをつける */
+.c-menu-card-top-text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+/* ブース番号の背景を黄色に */
+.c-menu-card-top__number{
+    background-color: var(--gyoza-yellow);
+}
+
+/* ブース番号(16px-24px)をclampで可変　背景のパディングもclampで可変 */
+.c-menu-card-top__number--padding{
+    font-size: clamp(1rem, 0.6795rem + 1.3675vw, 1.5rem);
+    padding: clamp(0.188rem, 0.067rem + 0.51vw, 0.375rem) clamp(0.5rem, 0.42rem + 0.34vw, 0.625rem);
+}
+
+/* 商品名(24px-32px)をclampで可変とフォント調整 */
+.c-menu-card-top-text__item{
+    font-size: clamp(1.5rem, 1.1795rem + 1.3675vw, 2rem);
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 値段(16px-24px)をclampで可変　フォント調整 */
+.c-menu-card-top-text__price{
+    font-size: clamp(1rem, 0.6795rem + 1.3675vw, 1.5rem);
+    font-weight: bold;
+    text-align: center;
+}
+
+/* 写真と商品紹介文と店舗紹介グループを縦並びして、写真とテキストの間にgap */
+.c-menu-card-bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+}
+
+/* 写真の大きさを確定 */
+.c-menu-card-bottom-container{
+    width: 100%;
+    aspect-ratio: 335 / 250;
+    overflow: hidden;
+}
+
+/* 写真自体の調整 */
+.c-menu-card-bottom-container__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 商品紹介文と店舗紹介グループを縦並びしてgap */
+.c-menu-card-bottom-text{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+/* 店舗名のフォント調整 */
+.c-menu-card-bottom-text__shopName{
+    font-weight: bold;
+}
+
+
+/* 会場MAP　コンポーネント */
+/* 番号とメニューのテキスト(16px-32px)をclampで可変 */
+.c-map-card-list__number , .c-map-card-list__item{
+    font-size: clamp(1rem, 0.359rem + 2.735vw, 2rem);
+}
+
+/* 品名のリンクが分かるようにテキストにアンダーライン */
+.c-map-card-list__item{
+    text-decoration: underline;
+    text-decoration-color: var(--gyoza-black);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+    text-decoration-style: dotted;
+}
+
+/* リンクのマウスオーバーで明るさと透明度の変化 */
+.c-map-card:hover{
+    filter: brightness(1.15);
+    opacity: 0.4;
+}
+
+/* ブース番号と商品名を横並びして間にgap */
+.c-map-card-list{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* ブース番号の背景色をつけパディングで大きく */
+.c-map-card-list__number--padding{
+    background-color: var(--gyoza-yellow);
+    padding: 3px 5px;
+}
+
+
+
+
+/* ---------------------------------- */
+/* PC用 */
+@media screen and (min-width:768px){
+
+/* ブース番号と品名・価格グループを横並びにしてgap */
+    .c-menu-card-top{
+        flex-direction: row;
+        justify-content: center;
+        align-items: start;
+        gap: 20px;
+    }
+
+/* 写真と店舗テキストを横並びにしてgapを入れ、店舗テキストを上付きに */
+    .c-menu-card-bottom{
+        flex-direction: row;
+        gap: 50px;
+        align-items: start;
+    }
+
+/* 偶数番目の写真とテキストをModifierで入替 */
+    .c-menu-card-bottom--reverse{
+        flex-direction: row-reverse;
+    }
+
+/* 写真のアスペクト比変更　.c-menu-card-bottom内の写真の比率を43に */
+    .c-menu-card-bottom-container{
+        aspect-ratio: 430 / 286;
+        flex: 43;
+    }
+
+/* .c-menu-card-bottom内のテキストの比率を48に*/
+    .c-menu-card-bottom-text{
+        flex: 48;
+    }
+
+}
+
+
 
 
 /* ニュース↓ */
