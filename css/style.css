@@ -29,11 +29,24 @@ img {
 }
 
 /* btn */
-.c-btn__yellow {
+.c-btn--yellow {
     background-color: var(--gyoza-yellow);
     padding: 6px 41px;
     border-radius: 40px;
     text-align: center;
+}
+
+.c-btn__top {
+    position: fixed;
+    right: clamp(20px, -8.169px + 7.512vw, 100px);
+    bottom: 100px;
+    border:
+        4px solid var(--gyoza-beige);
+    border-radius: 50%;
+}
+
+.c-btn__top img {
+    width: 127px;
 }
 
 
@@ -95,8 +108,66 @@ img {
 }
 
 /* フッター↓ */
+.l-footer {
+    background-color: var(--gyoza-black);
+    color: var(--gyoza-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding-block: 35px;
+}
+
+.l-fotter__contact {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.c-btn--black {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border: 1px solid var(--gyoza-white);
+    border-radius: 50px;
+    width: clamp(151px, 126.704px + 6.479vw, 220px);
+    padding: 5px 10px;
+}
+
+.c-btn--black img {
+    width: 30px;
+}
 
 
+/* fotter SNS */
+.l-footer__sns {
+    display: flex;
+    justify-content: center;
+    gap: 55px;
+}
+
+.c-sns__link img {
+    width: 55px;
+}
+
+/* footer text */
+.l-footer__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.l-footer__text small {
+    font-size: 12px;
+}
+
+.c-footer__company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* トップページ↓ */
 
