@@ -73,6 +73,7 @@ img {
 
 /* ヘッダー↓ */
 .l-header-inner {
+    height: 100%;
     width: min(960px, 89.3%);
     margin: 0 auto;
     display: flex;
@@ -88,16 +89,16 @@ img {
 .l-header {
     background-color: var(--gyoza-black);
     color: var(--gyoza-white);
-    padding-block: 26px;
+    height: clamp(50px, 29.930px + 5.352vw, 107px);
 }
 
 .c-logo {
-    width: clamp(52px, 36.507px + 4.131vw, 96px);
+    width: 96px;
 }
 
 .c-nav li {
     font-family: "Josefin Sans", serif;
-    font-size: 32px;
+    font-size: clamp(20px, 15.775px + 1.127vw, 32px);
     font-weight: bold;
 }
 
@@ -454,40 +455,40 @@ img {
 
 /* プライバシーポリシー↓ */
 /* ラッパー部分あとで共通部分へ */
-.l-privacy-wrapper{
+.l-privacy-wrapper {
     width: min(960px, 89.3%);
     margin-inline: auto;
 }
 
 /*  文章を１文字下げる*/
-.l-privacy-article__text{
+.l-privacy-article__text {
     padding-left: 1em;
 }
 
 /* 番号付き文章を２文字下げる */
-.l-privacy-article-order{
+.l-privacy-article-order {
     padding-left: 2em;
 }
 
 /* 番号付き文章が改行したときに１文字分あける */
-.l-privacy-article-order__text{
+.l-privacy-article-order__text {
     padding-left: 1em;
     text-indent: -2em;
 }
 
 /* 段落間のマージン付け */
-.l-privacy{
+.l-privacy {
     display: grid;
     row-gap: 55px;
     line-height: 1.5;
 }
 
-.l-privacy-article{
+.l-privacy-article {
     font-size: 16px;
     font-weight: bold;
 }
 
-.l-privacy-article__text{
+.l-privacy-article__text {
     font-size: 16px;
 }
 
