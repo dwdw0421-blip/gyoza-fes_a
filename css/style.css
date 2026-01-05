@@ -464,7 +464,47 @@ img {
 
 
 /* FAQ↓ */
+.l-faq-wrapper{
+    width: min(960px, 89.7%);
+    margin-inline: auto;
+}
 
+.l-faq{
+    display: grid;
+    row-gap: 80px;
+}
+
+.l-faq-section{
+    display: grid;
+    row-gap: 30px;
+}
+
+.l-faq-section__question + *{
+    margin-top: 10px;
+}
+   
+
+.l-faq{
+    line-height: 2;
+}
+
+.l-faq-section__title{
+    font-size: 24px;
+    text-align: center;
+}
+
+.l-faq-section__question{
+    font-size: 16px;
+    color: var(--gyoza-red);
+}
+
+.l-faq-section__answer{
+    padding-left: 1em;
+}
+
+.l-faq-section__answer--bold{
+    font-weight: bold;
+}
 
 
 /* コンタクト↓ */
