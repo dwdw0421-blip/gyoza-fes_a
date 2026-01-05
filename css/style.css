@@ -175,19 +175,6 @@ img {
 
 /* メニュー↓ */
 
-/* 仮のヘッダー黒く塗っただけ 後で消す*/
-.menu-temporary-header {
-    background-color: var(--gyoza-black);
-    height: clamp(50px, 29.91px + 5.35vw, 107px);
-    margin-bottom: clamp(90px, 58.26px + 8.45vw, 180px);
-}
-
-/* 仮のフッター黒く塗っただけ 後で消す*/
-.menu-temporary-footer {
-    background-color: var(--gyoza-black);
-    height: 424px;
-    margin-top: clamp(90px, 58.26px + 8.45vw, 180px);
-}
 
 /* レイアウト*/
 /* メニューと会場MAPのラップ調整 */
