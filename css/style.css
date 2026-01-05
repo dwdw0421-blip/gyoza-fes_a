@@ -13,6 +13,7 @@
 body {
     background-color: var(--gyoza-beige);
     font-size: 16px;
+    font-family: "Zen Maru Gothic", serif;
 }
 
 img {
@@ -50,10 +51,10 @@ img {
 }
 
 
-/* ｈ１共通設定 */
+/* 赤文字タイトル共通設定 */
 
-.c-title__main {
-    font-family: "Josefin sans", sans-serif;
+.c-title__main,
+.c-sec-title {
     font-size: 32px;
     font-weight: bold;
     color: var(--gyoza-red);
@@ -173,7 +174,123 @@ img {
 
 /* トップページ↓ */
 
+.l-hero {
+    background: url(../img/pc_hero.png) center center/cover;
+    height: 571px;
+    display: flex;
+    align-items: end;
+}
 
+.c-gray-area {
+    background-color: rgba(19, 26, 18, 0.6);
+    color: var(--gyoza-white);
+    width: 100%;
+    padding-block: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    font-family: "Noto Sans JP", serif;
+}
+
+.c-gray-area__top {
+    font-size: clamp(32px, 15.099px + 4.507vw, 80px);
+    font-weight: bold;
+}
+
+.c-gray-area__bottom {
+    font-size: clamp(24px, 28.930px + -1.315vw, 10px);
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.c-gray-area__item {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-weight: bold;
+}
+
+
+/* 黄色いアイコン↓ */
+
+.c-gray-area__item img {
+    width: 50px;
+}
+
+.c-gray-area__bottom dt {
+    background-color: var(--gyoza-yellow);
+    font-size: 8px;
+    text-align: center;
+    padding-block: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* ここまで */
+
+.c-gray-area--black {
+    color: var(--gyoza-black);
+}
+
+.c-gray-area--blue {
+    color: #6155F5;
+}
+
+.c-gray-area--red {
+    color: var(--gyoza-red);
+}
+
+/* catchcopy */
+.l-catchcopy {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+.l-catchcopy img {
+    width: clamp(335px, 149.437px + 49.484vw, 862px);
+}
+
+.l-catchcopy-text {
+    text-align: center;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.c-sec-title {
+    font-size: clamp(20px, 10.141px + 2.629vw, 48px);
+    font-weight: bold;
+    color: var(--gyoza-red);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.c-catchcopy-text--big {
+    font-size: 32px;
+}
+
+.c-catchcopy-text--bold {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.c-catchcopy-text--red {
+    color: var(--gyoza-red);
+}
+
+/* TOP PAGE-News */
+.l-topnews {
+    background-color: var(--gyoza-white);
+    border: 1px solid var(--gyoza-black);
+    border-radius: 30px;
+}
 
 /* メニュー↓ */
 
