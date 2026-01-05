@@ -105,18 +105,18 @@ img {
 /* メニュー↓ */
 
 /* 仮のヘッダー黒く塗っただけ 後で消す*/
-.menu-temporary-header {
+/* .menu-temporary-header {
     background-color: var(--gyoza-black);
     height: clamp(50px, 29.91px + 5.35vw, 107px);
     margin-bottom: clamp(90px, 58.26px + 8.45vw, 180px);
-}
+} */
 
 /* 仮のフッター黒く塗っただけ 後で消す*/
-.menu-temporary-footer {
+/* .menu-temporary-footer {
     background-color: var(--gyoza-black);
     height: 424px;
     margin-top: clamp(90px, 58.26px + 8.45vw, 180px);
-}
+} */
 
 /* レイアウト*/
 /* メニューと会場MAPのラップ調整 */
@@ -169,22 +169,24 @@ img {
 /* MENU　コンポーネント */
 
 /* 見出し　ＭＥＮＵページ用のクラス名にしてます */
+
 /* 共通設定に入れるか休み明けに相談 */
+/* 20260105置き換えたので消す */
 /* h2のタイトル */
-.c-menu-title__main {
+/* .c-menu-title__main {
     font-size: 32px;
     font-weight: bold;
     color: var(--gyoza-red);
     text-align: center;
     line-height: 1;
-}
+} */
 
 /* ｐのサブタイトル */
-.c-menu-title__sub {
+/* .c-menu-title__sub {
     font-size: 16px;
     text-align: center;
     line-height: 1;
-}
+} */
 
 /* タイトルの間隔調整 */
 .c-menu-title {
