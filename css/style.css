@@ -53,6 +53,7 @@ img {
 /* ｈ１共通設定 */
 
 .c-title__main {
+    font-family: "Josefin sans", sans-serif;
     font-size: 32px;
     font-weight: bold;
     color: var(--gyoza-red);
@@ -418,6 +419,22 @@ img {
 
 
 /* ニュース↓ */
+.l-news__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+
+.c-news__detail {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+}
+
+.c-news__detail :hover {
+    text-decoration: underline solid var(--gyoza-black) 1px;
+}
 
 
 
