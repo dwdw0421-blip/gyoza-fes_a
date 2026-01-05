@@ -59,8 +59,40 @@ img {
 
 
 /* ヘッダー↓ */
+.l-header-inner {
+    width: min(960px, 89.3%);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.c-nav ul {
+    display: flex;
+    gap: 30px;
+}
 
+.l-header {
+    background-color: var(--gyoza-black);
+    color: var(--gyoza-white);
+    padding-block: 26px;
+}
+
+.c-logo {
+    width: clamp(52px, 36.507px + 4.131vw, 96px);
+}
+
+.c-nav li {
+    font-family: "Josefin Sans", serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+    .c-nav {
+        visibility: hidden;
+    }
+}
 
 /* フッター↓ */
 
