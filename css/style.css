@@ -230,20 +230,20 @@ img {
 /* 見出し　ＭＥＮＵページ用のクラス名にしてます */
 /* 共通設定に入れるか休み明けに相談 */
 /* h2のタイトル */
-.c-menu-title__main {
+/* .c-menu-title__main {
     font-size: 32px;
     font-weight: bold;
     color: var(--gyoza-red);
     text-align: center;
     line-height: 1;
-}
+} */
 
 /* ｐのサブタイトル */
-.c-menu-title__sub {
+/* .c-menu-title__sub {
     font-size: 16px;
     text-align: center;
     line-height: 1;
-}
+} */
 
 /* タイトルの間隔調整 */
 .c-menu-title {
