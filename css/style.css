@@ -436,6 +436,31 @@ img {
     text-decoration: underline solid var(--gyoza-black) 1px;
 }
 
+/* ニュース詳細 */
+
+.l-article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 65px;
+}
+
+.c-article__title-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.c-article__title-area h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.c-news-return__link {
+    text-align: center;
+    text-decoration: underline solid var(--gyoza-black) 1px;
+}
 
 
 /* FAQ↓ */
