@@ -12,40 +12,55 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Noto+Sans+JP:wght@100..900&family=Zen+Maru+Gothic&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-
-    <main>
-        <p>NEWS</p>
-        <p>お知らせ</p>
+    <header class="l-header">
+        <div class="l-header-inner">
+            <p class="c-logo">
+                <a href="#"><img src="../img/logo-icon.png" alt="ふくおか餃子フェス"></a>
+            </p>
+            <nav class="c-nav">
+                <ul>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="#">INFO</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="#">ACCESS</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="l-wrapper">
+        <p class="c-title__main" data-sub-title="お知らせ">NEWS</p>
         <section>
-            <article>
-                <h1>ふくおか餃子FES開催決定！</h1>
-                <p><time datetime="2030-02-16">2030.2.16（土）</time></p>
-                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                <p>
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            <article class="l-article">
+                <div class="c-article__title-area">
+                    <h1>ふくおか餃子FES開催決定！</h1>
+                    <p><time datetime="2030-02-16">2030.2.16（土）</time></p>
+                </div>
+                <br>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</br>
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
             </article>
-            <p>
-                <a href="#">お知らせ一覧へ戻る</a>
+            <p class="c-news-return__link">
+                <a href="../news.html">お知らせ一覧へ戻る</a>
             </p>
         </section>
     </main>
     <footer class="l-footer">
         <div class="l-fotter__contact">
-            <a href="contact.html" class="c-btn--black"><img src="img/icon-mail.png" alt="">
+            <a href="contact.html" class="c-btn--black"><img src="../img/icon-mail.png" alt="">
                 <p>CONTACT</p>
             </a>
-            <a href="tel:XXX-XXX-XXXX" class="c-btn--black"><img src="img/icon-tel.png" alt="">
+            <a href="tel:XXX-XXX-XXXX" class="c-btn--black"><img src="../img/icon-tel.png" alt="">
                 <p>XXX-XXX-XXXX</p>
             </a>
         </div>
         <ul class="l-footer__sns">
-            <li class="c-sns__link"><a href="#"><img src="img/sns-x.png" alt=""></a></li>
-            <li class="c-sns__link"><a href="#"><img src="img/sns-insta.png" alt=""></a></li>
-            <li class="c-sns__link"><a href="#"><img src="img/sns-facebook.png" alt=""></a></li>
+            <li class="c-sns__link"><a href="#"><img src="../img/sns-x.png" alt=""></a></li>
+            <li class="c-sns__link"><a href="#"><img src="../img/sns-insta.png" alt=""></a></li>
+            <li class="c-sns__link"><a href="#"><img src="../img/sns-facebook.png" alt=""></a></li>
         </ul>
         <div class="l-footer__text">
             <div class="c-footer__company">
@@ -57,7 +72,7 @@
             <small>&copy;2030 福岡餃子FES実行委員会</small>
         </div>
     </footer>
-    <a href="#" class="c-btn__top"><img src="./img/back-top.png" alt="topへ戻る"></a>
+    <a href="#" class="c-btn__top"><img src=".././img/back-top.png" alt="topへ戻る"></a>
 
 </body>
 
