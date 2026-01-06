@@ -785,12 +785,19 @@ img {
 .l-contact__form {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: clamp(2.25rem, 1.282rem + 4.131vw, 5rem);
 }
 
 .l-form__item {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 4px;
+}
+
+.l-form__item p {
+    display: block;
+    width: min(180px);
 }
 
 .l-form__item span {
@@ -817,18 +824,14 @@ img {
 .l-contact__form>.c-btn--yellow {
     width: 114px;
     padding: 16px 41px;
+    margin: 0 auto;
+}
+
+.c-contact__text>a {
+    text-decoration: underline solid var(--gyoza-black) 1px;
 }
 
 @media screen and (max-width:768px) {
-
-    .l-contact__form {
-        gap: 36px;
-    }
-
-    .l-form__item {
-        flex-direction: column;
-        gap: 4px;
-    }
 
     .c-form__box {
         width: 100%;
