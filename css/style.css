@@ -37,10 +37,9 @@ img {
 /* btn */
 .c-btn--yellow {
     background-color: var(--gyoza-yellow);
-    padding: 6px 41px;
     border-radius: 40px;
     text-align: center;
-    margin: 0 auto;
+    display: block;
 }
 
 .c-btn__top {
@@ -329,6 +328,7 @@ img {
 .l-topmenu {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 80px;
 }
 
@@ -369,8 +369,8 @@ img {
     font-size: 12px;
 }
 
-/* btn */
-.l-topmenu .c-btn--yellow {
+/* TOPMENUのbtn */
+.l-topmenu>.c-btn--yellow {
     width: 280px;
     font-weight: bold;
     padding: 20px 28px;
@@ -400,6 +400,7 @@ img {
 /* TOP-FAQ */
 .c-btn__faq {
     width: 280px;
+    padding: 10px 30px;
 }
 
 .c-btn__faq--bold {
@@ -811,9 +812,11 @@ img {
     text-align: center;
 }
 
-.l-contact__form .c-btn--yellow {
+/* 送信ボタン */
+
+.l-contact__form>.c-btn--yellow {
     width: 114px;
-    margin-inline: auto;
+    padding: 16px 41px;
 }
 
 @media screen and (max-width:768px) {
