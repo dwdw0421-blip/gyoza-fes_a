@@ -221,10 +221,11 @@ img {
 }
 
 /* アイコンと文字を真ん中揃えにするため記述 */
-.c-gray-area__location{
+.c-gray-area__location {
     display: flex;
     align-items: center;
 }
+
 /* ここまで */
 
 
@@ -267,13 +268,14 @@ img {
 
 /* ヒーローとキャッチコピーのマージン追加
 その他のメイン内のセクション間はl-wrapperで設定 */
-.c-catchcopy-title{
+.c-catchcopy-title {
     margin-top: 180px;
     font-size: 48px;
     font-weight: bold;
     color: var(--gyoza-red);
-    
+
 }
+
 .l-catchcopy img {
     width: clamp(335px, 149.437px + 49.484vw, 862px);
     margin-top: 20px;
@@ -318,13 +320,11 @@ img {
     width: 100%;
 }
 
-<<<<<<< HEAD
 /* インフォメーション */
 
 
 
 
-=======
 /* TOP-Menu */
 .l-topmenu {
     display: flex;
@@ -422,7 +422,6 @@ img {
 .c-btn__faq--small {
     font-size: 12px;
 }
->>>>>>> main
 
 /* メニュー↓ */
 
