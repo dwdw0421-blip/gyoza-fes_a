@@ -581,47 +581,83 @@ img {
 
 
 /* FAQ↓ */
+
+/* FAQ全体のラッピング */
 .l-faq-wrapper{
     width: min(960px, 89.7%);
     margin-inline: auto;
 }
 
+/* セクション別の隙間 */
 .l-faq{
     display: grid;
-    row-gap: 80px;
+    row-gap: 90px;
 }
 
+/* セクション内の隙間 */
 .l-faq-section{
     display: grid;
     row-gap: 30px;
 }
 
+/* 各セクション 赤字Qの後の隙間 */
 .l-faq-section__question + *{
     margin-top: 10px;
 }
    
-
+/* テキストの行間 */
 .l-faq{
-    line-height: 2;
+    line-height: 1.5;
 }
 
+/* テキスト設定 全体設定に移行したら削除 */
 .l-faq-section__title{
     font-size: 24px;
     text-align: center;
 }
 
+/* テキスト設定 全体設定に移行したら削除 */
 .l-faq-section__question{
     font-size: 16px;
+    font-weight: bold;
     color: var(--gyoza-red);
 }
 
+/* 解答テキストの段落ずらし */
 .l-faq-section__answer{
     padding-left: 1em;
 }
 
+/* 強調文字の設定 */
 .l-faq-section__answer--bold{
     font-weight: bold;
 }
+
+/* 会場マップへのリンクの装飾 */
+.l-faq-section--venue-map{
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-align: center;
+}
+
+/* contactテキスト装飾 */
+.l-faq-section__answer--under{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* マップ リンクのマウスオーバー */
+.l-faq-section--venue-map:hover {
+    filter: brightness(1.15);
+    opacity: 0.4;
+}
+
+/*  contactテキスト リンクのマウスオーバー */
+.l-faq-section__answer--under:hover {
+    filter: brightness(1.15);
+    opacity: 0.4;
+}
+
 
 
 /* コンタクト↓ */
