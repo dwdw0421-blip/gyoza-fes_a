@@ -140,7 +140,7 @@ img {
     border: 1px solid var(--gyoza-white);
     border-radius: 50px;
     width: clamp(151px, 126.704px + 6.479vw, 220px);
-    padding: 5px 10px;
+    padding-block: 5px;
 }
 
 .c-btn--black img {
