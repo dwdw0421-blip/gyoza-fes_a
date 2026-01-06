@@ -647,6 +647,10 @@ img {
 }
 
 /* マップ リンクのマウスオーバー */
+1 conflicting file
+style.css
+css/style.css
+css/style.css
 .l-faq-section--venue-map:hover {
     filter: brightness(1.15);
     opacity: 0.4;
@@ -665,27 +669,54 @@ img {
 .l-contact__form {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 80px;
 }
 
 .l-form__item {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.l-form__item span {
+    font-size: 12px;
 }
 
 .c-form__box {
     background-color: var(--gyoza-white);
     border: 1px solid var(--gyoza-black);
     width: clamp(335px, 178.310px + 41.784vw, 780px);
+    height: 55px;
 }
 
+.l-form__item textarea {
+    height: 186px;
+}
 
 .c-contact__text {
     text-align: center;
 }
 
+.l-contact__form .c-btn--yellow {
+    width: 114px;
+    margin-inline: auto;
+}
+
+@media screen and (max-width:768px) {
+
+    .l-contact__form {
+        gap: 36px;
+    }
+
+    .l-form__item {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .c-form__box {
+        width: 100%;
+    }
+
+}
 
 
 /* プライバシーポリシー↓ */
