@@ -29,12 +29,18 @@ img {
     gap: 180px;
 }
 
+/* ヘッダーの下の隙間 90pxから180pxに可変で設定 */
+.l-header-margin+* {
+    margin-top: clamp(5.625rem, 3.644rem + 8.45vw, 11.25rem);
+}
+
 /* btn */
 .c-btn--yellow {
     background-color: var(--gyoza-yellow);
     padding: 6px 41px;
     border-radius: 40px;
     text-align: center;
+    margin: 0 auto;
 }
 
 .c-btn__top {
@@ -312,11 +318,111 @@ img {
     width: 100%;
 }
 
+<<<<<<< HEAD
 /* インフォメーション */
 
 
 
 
+=======
+/* TOP-Menu */
+.l-topmenu {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.c-topmenu {
+    display: flex;
+    flex-direction: column;
+    gap: 84px;
+}
+
+.c-topmenu-01,
+.c-topmenu-02 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.c-topmenu__li {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.c-topmenu__name-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.c-topmenu img {
+    width: 179px;
+    height: 179px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.c-topmenu__name {
+    font-weight: bold;
+}
+
+.c-topmenu__price {
+    font-size: 12px;
+}
+
+/* btn */
+.l-topmenu .c-btn--yellow {
+    width: 280px;
+    font-weight: bold;
+    padding: 20px 28px;
+}
+
+@media screen and (max-width:768px) {
+
+    .c-topmenu-01,
+    .c-topmenu-02 {
+        flex-direction: column;
+        align-items: center;
+        gap: 47px;
+    }
+}
+
+
+/* TOP-ACCESS */
+.c-map {
+    width: 100%;
+    height: clamp(201px, 68.254px + 35.399vw, 578px);
+}
+
+.c-access {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 128px clamp(207px, 85.521px + 32.394vw, 552px);
+    row-gap: 30px;
+}
+
+.l-access {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+
+/* TOP-FAQ */
+.c-btn__faq {
+    width: 280px;
+}
+
+.c-btn__faq--bold {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.c-btn__faq--small {
+    font-size: 12px;
+}
+>>>>>>> main
 
 /* メニュー↓ */
 
@@ -607,47 +713,83 @@ img {
 
 
 /* FAQ↓ */
-.l-faq-wrapper{
+
+/* FAQ全体のラッピング */
+.l-faq-wrapper {
     width: min(960px, 89.7%);
     margin-inline: auto;
 }
 
-.l-faq{
+/* セクション別の隙間 */
+.l-faq {
     display: grid;
-    row-gap: 80px;
+    row-gap: 90px;
 }
 
-.l-faq-section{
+/* セクション内の隙間 */
+.l-faq-section {
     display: grid;
     row-gap: 30px;
 }
 
-.l-faq-section__question + *{
+/* 各セクション 赤字Qの後の隙間 */
+.l-faq-section__question+* {
     margin-top: 10px;
 }
-   
 
-.l-faq{
-    line-height: 2;
+/* テキストの行間 */
+.l-faq {
+    line-height: 1.5;
 }
 
-.l-faq-section__title{
+/* テキスト設定 全体設定に移行したら削除 */
+.l-faq-section__title {
     font-size: 24px;
     text-align: center;
 }
 
-.l-faq-section__question{
+/* テキスト設定 全体設定に移行したら削除 */
+.l-faq-section__question {
     font-size: 16px;
+    font-weight: bold;
     color: var(--gyoza-red);
 }
 
-.l-faq-section__answer{
+/* 解答テキストの段落ずらし */
+.l-faq-section__answer {
     padding-left: 1em;
 }
 
-.l-faq-section__answer--bold{
+/* 強調文字の設定 */
+.l-faq-section__answer--bold {
     font-weight: bold;
 }
+
+/* 会場マップへのリンクの装飾 */
+.l-faq-section--venue-map {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-align: center;
+}
+
+/* contactテキスト装飾 */
+.l-faq-section__answer--under {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* マップ リンクのマウスオーバー */
+.l-faq-section--venue-map:hover {
+    filter: brightness(1.15);
+    opacity: 0.4;
+}
+
+/*  contactテキスト リンクのマウスオーバー */
+.l-faq-section__answer--under:hover {
+    filter: brightness(1.15);
+    opacity: 0.4;
+}
+
 
 
 /* コンタクト↓ */
@@ -655,27 +797,54 @@ img {
 .l-contact__form {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 80px;
 }
 
 .l-form__item {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
-    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.l-form__item span {
+    font-size: 12px;
 }
 
 .c-form__box {
     background-color: var(--gyoza-white);
     border: 1px solid var(--gyoza-black);
     width: clamp(335px, 178.310px + 41.784vw, 780px);
+    height: 55px;
 }
 
+.l-form__item textarea {
+    height: 186px;
+}
 
 .c-contact__text {
     text-align: center;
 }
 
+.l-contact__form .c-btn--yellow {
+    width: 114px;
+    margin-inline: auto;
+}
+
+@media screen and (max-width:768px) {
+
+    .l-contact__form {
+        gap: 36px;
+    }
+
+    .l-form__item {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .c-form__box {
+        width: 100%;
+    }
+
+}
 
 
 /* プライバシーポリシー↓ */
