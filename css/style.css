@@ -40,6 +40,7 @@ img {
     padding: 6px 41px;
     border-radius: 40px;
     text-align: center;
+    margin: 0 auto;
 }
 
 .c-btn__top {
@@ -295,6 +296,104 @@ img {
     background-color: var(--gyoza-white);
     border: 1px solid var(--gyoza-black);
     border-radius: 30px;
+}
+
+/* TOP-Menu */
+.l-topmenu {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.c-topmenu {
+    display: flex;
+    flex-direction: column;
+    gap: 84px;
+}
+
+.c-topmenu-01,
+.c-topmenu-02 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.c-topmenu__li {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.c-topmenu__name-price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.c-topmenu img {
+    width: 179px;
+    height: 179px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.c-topmenu__name {
+    font-weight: bold;
+}
+
+.c-topmenu__price {
+    font-size: 12px;
+}
+
+/* btn */
+.l-topmenu .c-btn--yellow {
+    width: 280px;
+    font-weight: bold;
+    padding: 20px 28px;
+}
+
+@media screen and (max-width:768px) {
+
+    .c-topmenu-01,
+    .c-topmenu-02 {
+        flex-direction: column;
+        align-items: center;
+        gap: 47px;
+    }
+}
+
+
+/* TOP-ACCESS */
+.c-map {
+    width: 100%;
+    height: clamp(201px, 68.254px + 35.399vw, 578px);
+}
+
+.c-access {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 128px clamp(207px, 85.521px + 32.394vw, 552px);
+    row-gap: 30px;
+}
+
+.l-access {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+
+/* TOP-FAQ */
+.c-btn__faq {
+    width: 280px;
+}
+
+.c-btn__faq--bold {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.c-btn__faq--small {
+    font-size: 12px;
 }
 
 /* メニュー↓ */
