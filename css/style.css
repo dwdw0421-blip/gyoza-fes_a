@@ -37,10 +37,9 @@ img {
 /* btn */
 .c-btn--yellow {
     background-color: var(--gyoza-yellow);
-    padding: 6px 41px;
     border-radius: 40px;
     text-align: center;
-    margin: 0 auto;
+    display: block;
 }
 
 .c-btn__top {
@@ -141,7 +140,7 @@ img {
     border: 1px solid var(--gyoza-white);
     border-radius: 50px;
     width: clamp(151px, 126.704px + 6.479vw, 220px);
-    padding: 5px 10px;
+    padding-block: 5px;
 }
 
 .c-btn--black img {
@@ -327,24 +326,27 @@ img {
 
 /* TOP-Menu */
 .l-topmenu {
+    /* ↓フレックス調整のために幅をつけた
+    共通設定する際に消す */
+    max-width: 960px;
+    width: 89%;
+    /*  */
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 80px;
 }
 
+
 .c-topmenu {
     display: flex;
-    flex-direction: column;
-    gap: 84px;
-}
-
-.c-topmenu-01,
-.c-topmenu-02 {
-    display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    column-gap: max(46px);
+    row-gap: 74px;
 }
 
-.c-topmenu__li {
+.c-topmenu__card {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -361,6 +363,7 @@ img {
     height: 179px;
     border-radius: 50%;
     object-fit: cover;
+    filter: drop-shadow(10px 10px 4px rgba(0, 0, 0, 0.25));
 }
 
 .c-topmenu__name {
@@ -371,21 +374,11 @@ img {
     font-size: 12px;
 }
 
-/* btn */
-.l-topmenu .c-btn--yellow {
+/* TOPMENUのbtn */
+.l-topmenu>.c-btn--yellow {
     width: 280px;
     font-weight: bold;
     padding: 20px 28px;
-}
-
-@media screen and (max-width:768px) {
-
-    .c-topmenu-01,
-    .c-topmenu-02 {
-        flex-direction: column;
-        align-items: center;
-        gap: 47px;
-    }
 }
 
 
@@ -412,6 +405,7 @@ img {
 /* TOP-FAQ */
 .c-btn__faq {
     width: 280px;
+    padding: 10px 30px;
 }
 
 .c-btn__faq--bold {
@@ -796,12 +790,19 @@ img {
 .l-contact__form {
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: clamp(2.25rem, 1.282rem + 4.131vw, 5rem);
 }
 
 .l-form__item {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 4px;
+}
+
+.l-form__item p {
+    display: block;
+    width: min(180px);
 }
 
 .l-form__item span {
@@ -823,21 +824,19 @@ img {
     text-align: center;
 }
 
-.l-contact__form .c-btn--yellow {
+/* 送信ボタン */
+
+.l-contact__form>.c-btn--yellow {
     width: 114px;
-    margin-inline: auto;
+    padding: 16px 41px;
+    margin: 0 auto;
+}
+
+.c-contact__text>a {
+    text-decoration: underline solid var(--gyoza-black) 1px;
 }
 
 @media screen and (max-width:768px) {
-
-    .l-contact__form {
-        gap: 36px;
-    }
-
-    .l-form__item {
-        flex-direction: column;
-        gap: 4px;
-    }
 
     .c-form__box {
         width: 100%;
