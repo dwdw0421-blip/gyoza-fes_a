@@ -30,7 +30,7 @@ img {
 }
 
 /* ヘッダーの下の隙間 90pxから180pxに可変で設定 */
-.l-header-margin + *{
+.l-header-margin+* {
     margin-top: clamp(5.625rem, 3.644rem + 8.45vw, 11.25rem);
 }
 
@@ -687,74 +687,70 @@ img {
 /* FAQ↓ */
 
 /* FAQ全体のラッピング */
-.l-faq-wrapper{
+.l-faq-wrapper {
     width: min(960px, 89.7%);
     margin-inline: auto;
 }
 
 /* セクション別の隙間 */
-.l-faq{
+.l-faq {
     display: grid;
     row-gap: 90px;
 }
 
 /* セクション内の隙間 */
-.l-faq-section{
+.l-faq-section {
     display: grid;
     row-gap: 30px;
 }
 
 /* 各セクション 赤字Qの後の隙間 */
-.l-faq-section__question + *{
+.l-faq-section__question+* {
     margin-top: 10px;
 }
-   
+
 /* テキストの行間 */
-.l-faq{
+.l-faq {
     line-height: 1.5;
 }
 
 /* テキスト設定 全体設定に移行したら削除 */
-.l-faq-section__title{
+.l-faq-section__title {
     font-size: 24px;
     text-align: center;
 }
 
 /* テキスト設定 全体設定に移行したら削除 */
-.l-faq-section__question{
+.l-faq-section__question {
     font-size: 16px;
     font-weight: bold;
     color: var(--gyoza-red);
 }
 
 /* 解答テキストの段落ずらし */
-.l-faq-section__answer{
+.l-faq-section__answer {
     padding-left: 1em;
 }
 
 /* 強調文字の設定 */
-.l-faq-section__answer--bold{
+.l-faq-section__answer--bold {
     font-weight: bold;
 }
 
 /* 会場マップへのリンクの装飾 */
-.l-faq-section--venue-map{
+.l-faq-section--venue-map {
     text-decoration: underline;
     text-underline-offset: 3px;
     text-align: center;
 }
 
 /* contactテキスト装飾 */
-.l-faq-section__answer--under{
+.l-faq-section__answer--under {
     text-decoration: underline;
     font-weight: bold;
 }
 
 /* マップ リンクのマウスオーバー */
-1 conflicting file
-style.css
-css/style.css
-css/style.css
 .l-faq-section--venue-map:hover {
     filter: brightness(1.15);
     opacity: 0.4;
