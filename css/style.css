@@ -42,17 +42,26 @@ img {
     display: block;
 }
 
+.c-btn--yellow:hover {
+    transition-duration: .4s;
+    transform: scale(1.1);
+}
+
 .c-btn__top {
     position: fixed;
     right: clamp(20px, -8.169px + 7.512vw, 100px);
-    bottom: 100px;
+    bottom: 50px;
     border:
         4px solid var(--gyoza-beige);
     border-radius: 50%;
 }
 
 .c-btn__top img {
-    width: 127px;
+    width: clamp(60px, 36.408px + 6.291vw, 127px);
+}
+
+.c-btn__top:hover {
+    filter: invert(100%);
 }
 
 
@@ -67,6 +76,7 @@ img {
     line-height: 1;
     display: flex;
     flex-direction: column;
+    text-transform: uppercase;
 }
 
 .c-title__main::after {
@@ -109,6 +119,12 @@ img {
     font-weight: bold;
 }
 
+.c-logo:hover,
+.c-nav li:hover {
+    filter: brightness(1.15);
+    opacity: 0.4;
+}
+
 @media screen and (max-width: 768px) {
     .c-nav {
         visibility: hidden;
@@ -124,6 +140,7 @@ img {
     align-items: center;
     gap: 60px;
     padding-block: 35px;
+    margin-top: clamp(50px, 5.986px + 11.737vw, 175px);
 }
 
 .l-fotter__contact {
@@ -176,6 +193,13 @@ img {
     flex-direction: column;
     align-items: center;
 }
+
+/* hover */
+.l-footer a:hover {
+    filter: brightness(1.15);
+    opacity: 0.4;
+}
+
 
 /* トップページ↓ */
 
@@ -396,6 +420,7 @@ img {
 }
 
 .l-access {
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 80px;
@@ -665,17 +690,29 @@ img {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 100%;
 }
 
 
 .c-news__detail {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
 }
 
-.c-news__detail :hover {
+.c-news__detail dd {
+    width: max(416px);
     text-decoration: underline solid var(--gyoza-black) 1px;
+}
+
+.c-news__detail dd :hover {
+    filter: brightness(1.15);
+    opacity: 0.4;
+}
+
+@media screen and (max-width:768px) {
+    .l-news__list {
+        gap: 20px;
+    }
 }
 
 /* ニュース詳細 */
@@ -702,6 +739,11 @@ img {
 .c-news-return__link {
     text-align: center;
     text-decoration: underline solid var(--gyoza-black) 1px;
+}
+
+.c-news-return__link :hover {
+    filter: brightness(1.15);
+    opacity: 0.4;
 }
 
 
