@@ -44,7 +44,7 @@ img {
 
 .c-btn--yellow:hover {
     transition-duration: .4s;
-    transform: scale(1.1);
+    transform: scale(0.9);
 }
 
 .c-btn__top {
