@@ -322,12 +322,46 @@ img {
 }
 
 /* TOP PAGE-News */
+
+.l-topnews {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+}
+
 .l-topnews-inner {
     background-color: var(--gyoza-white);
     border: 1px solid var(--gyoza-black);
     border-radius: 30px;
     width: 100%;
+    padding: 20px 20px 0 20px;
 }
+
+.c-news-date {
+    font-weight: normal;
+}
+
+.c-news-detail {
+    display: inline-block;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--gyoza-black);
+}
+
+/* toppage-news pc用 */
+
+@media screen and (min-width:768px) {
+    .c-topnews-list {
+        display: flex;
+        gap: 50px;
+    }
+}
+
+
+
+
+
+
 
 /* インフォメーション */
 
