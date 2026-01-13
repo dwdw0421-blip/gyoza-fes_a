@@ -209,6 +209,17 @@ img {
     align-items: end;
 }
 
+@media screen and (max-width:768px) {
+    .l-hero {
+    background: url(../img/sp_hero.svg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 375px;
+}
+    
+}
+
 .c-gray-area {
     background-color: rgba(19, 26, 18, 0.6);
     color: var(--gyoza-white);
