@@ -178,9 +178,6 @@ img {
 }
 
 /* トップページ↓ */
-
-
-
 .l-hero {
     background: url(../img/pc_hero.png) center center/cover;
     height: 571px;
@@ -269,9 +266,10 @@ img {
 その他のメイン内のセクション間はl-wrapperで設定 */
 .c-catchcopy-title {
     margin-top: 180px;
-    font-size: 48px;
+    font-size: clamp(1rem, 0.428rem + 2.441vw, 2.625rem);
     font-weight: bold;
     color: var(--gyoza-red);
+    text-align: center;
 
 }
 
