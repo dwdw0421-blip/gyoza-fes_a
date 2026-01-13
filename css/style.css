@@ -676,10 +676,12 @@ img {
 
 .c-news__detail dd {
     width: max(416px);
+    text-decoration: underline solid var(--gyoza-black) 1px;
 }
 
 .c-news__detail dd :hover {
-    text-decoration: underline solid var(--gyoza-black) 1px;
+    filter: brightness(1.15);
+    opacity: 0.4;
 }
 
 @media screen and (max-width:768px) {
@@ -712,6 +714,11 @@ img {
 .c-news-return__link {
     text-align: center;
     text-decoration: underline solid var(--gyoza-black) 1px;
+}
+
+.c-news-return__link :hover {
+    filter: brightness(1.15);
+    opacity: 0.4;
 }
 
 
