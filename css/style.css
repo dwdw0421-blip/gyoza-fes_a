@@ -118,6 +118,12 @@ img {
     font-weight: bold;
 }
 
+.c-logo:hover,
+.c-nav li:hover {
+    filter: brightness(1.15);
+    opacity: 0.4;
+}
+
 @media screen and (max-width: 768px) {
     .c-nav {
         visibility: hidden;
