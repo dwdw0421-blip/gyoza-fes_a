@@ -42,6 +42,11 @@ img {
     display: block;
 }
 
+.c-btn--yellow:hover {
+    transition-duration: .4s;
+    transform: scale(1.1);
+}
+
 .c-btn__top {
     position: fixed;
     right: clamp(20px, -8.169px + 7.512vw, 100px);
