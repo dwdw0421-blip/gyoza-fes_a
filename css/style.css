@@ -210,9 +210,6 @@ img {
 
 
 /* トップページ↓ */
-
-
-
 .l-hero {
     background: url(../img/pc_hero.png) center center/cover;
     height: 571px;
@@ -233,12 +230,19 @@ img {
 }
 
 .c-gray-area__top {
-    font-size: clamp(32px, 15.099px + 4.507vw, 80px);
+    /* font-size: clamp(32px, 15.099px + 4.507vw, 80px); */
+    font-size: clamp(2rem, 0.944rem + 4.507vw, 5rem);
     font-weight: bold;
+    text-shadow: 1px 1px 0 var(--gyoza-black), -1px 1px 0 var(--gyoza-black), 1px -1px 0 var(--gyoza-black), -1px -1px 0 var(--gyoza-black);
+}
+
+.c-gray-area_top_sun {
+    font-size: clamp(1rem, 0.648rem + 1.502vw, 2rem);
+
 }
 
 .c-gray-area__bottom {
-    font-size: clamp(24px, 28.930px + -1.315vw, 10px);
+    font-size: clamp(0.625rem, 0.317rem + 1.315vw, 1.5rem);
     display: flex;
     gap: 50px;
     justify-content: center;
@@ -249,6 +253,11 @@ img {
     gap: 15px;
     align-items: center;
     font-weight: bold;
+}
+
+
+.c-gray-area__item dd {
+    text-shadow: 1px 1px 0 var(--gyoza-black), -1px 1px 0 var(--gyoza-black), 1px -1px 0 var(--gyoza-black), -1px -1px 0 var(--gyoza-black);
 }
 
 /* アイコンと文字を真ん中揃えにするため記述 */
@@ -263,7 +272,7 @@ img {
 /* 黄色いアイコン↓ */
 
 .c-gray-area__item img {
-    width: 50px;
+    width: clamp(1.875rem, 1.435rem + 1.878vw, 3.125rem);
 }
 
 .c-gray-area__bottom dt {
@@ -301,9 +310,10 @@ img {
 その他のメイン内のセクション間はl-wrapperで設定 */
 .c-catchcopy-title {
     margin-top: 180px;
-    font-size: 48px;
+    font-size: clamp(1rem, 0.428rem + 2.441vw, 2.625rem);
     font-weight: bold;
     color: var(--gyoza-red);
+    text-align: center;
 
 }
 
@@ -314,7 +324,7 @@ img {
 
 .l-catchcopy-text {
     text-align: center;
-    font-size: 24px;
+    font-size: clamp(1rem, 0.824rem + 0.751vw, 1.5rem);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -331,12 +341,12 @@ img {
 }
 
 .c-catchcopy-text--big {
-    font-size: 32px;
+    font-size: clamp(1.5rem, 1.324rem + 0.751vw, 2rem);
 }
 
 .c-catchcopy-text--bold {
     font-weight: bold;
-    font-size: 32px;
+    font-size: clamp(1.5rem, 1.324rem + 0.751vw, 2rem);
 }
 
 .c-catchcopy-text--red {
@@ -344,15 +354,84 @@ img {
 }
 
 /* TOP PAGE-News */
+
 .l-topnews {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+
+}
+
+.l-topnews-inner {
     background-color: var(--gyoza-white);
     border: 1px solid var(--gyoza-black);
     border-radius: 30px;
     width: 100%;
+    padding: 20px 20px 0 20px;
+}
+
+.c-news-date {
+    font-weight: normal;
+}
+
+.c-news-detail {
+    display: inline-block;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--gyoza-black);
+}
+
+.c-topnews_dl-link {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.c-topnews-link {
+    text-align: right;
+    text-decoration: underline;
+    text-decoration-thickness: 1px
+}
+
+/* toppage-news pc用 */
+
+@media screen and (min-width:768px) {
+    .c-topnews-list {
+        display: flex;
+        gap: 50px;
+    }
 }
 
 /* インフォメーション */
+.l-information {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
 
+.c-info-detail {
+    margin-bottom: 23px;
+}
+
+.c-info-title::before {
+    content: "●";
+}
+
+@media screen and (min-width:768px) {
+    .c-info-inner {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .c-info-title {
+        list-style: disc;
+        width: 40%;
+    }
+
+    .c-info-detail {
+        width: 60%;
+    }
+
+}
 
 
 
@@ -451,6 +530,110 @@ img {
 }
 
 /* メニュー↓ */
+
+
+/*ハンバーガ―メニュー*/
+/* ここから ↓-------------------------------------- */
+.c-menu-wrapper {
+  position: relative;
+}
+
+.c-menu__icon {
+  width: 20px;
+  height: 20px;
+  position: fixed; /* ← fixedにして常に右上固定 */
+  top: 14px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 3;
+  display: inline-block;
+}
+
+.c-menu__icon span {
+  display: block;
+  height: 2px;
+  margin: 6px 0;
+  background: #ffffff;
+  border-radius: 1px;
+  transition: 0.4s;
+}
+
+/* ハンバーガーがXに変形 */
+#menu-toggle:checked + .c-menu__icon span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+#menu-toggle:checked + .c-menu__icon span:nth-child(2) {
+  opacity: 0;
+}
+#menu-toggle:checked + .c-menu__icon span:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}
+
+/* オーバーレイ背景 */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.4s;
+  z-index: 1;
+}
+
+#menu-toggle:checked ~ .overlay {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* メニュー本体（左から出す） */
+.c-menu-hamburger {
+  position: fixed;
+  top: 0;
+  left: -375px; /* ← 初期位置を左へ */
+  width: 375px;
+  height: 100%;
+  background: var(--gyoza-black);
+  box-shadow: 2px 0 8px rgba(0,0,0,0.2);
+  transition: left 0.4s ease;
+  z-index: 2;
+}
+
+#menu-toggle:checked ~ .c-menu-hamburger {
+  left: 0; /* ← 開いたときは左0へ */
+}
+
+.c-menu-hamburger-text{
+  list-style: none;
+  padding: 60px 20px;
+}
+
+.c-menu-hamburger-text-list {
+  margin: 15px 0;
+}
+
+.c-menu-hamburger-text-list a {
+  text-decoration: none;
+  color: var(--gyoza-white);
+  /* font-size: 16px;
+  font-weight: bold; */
+  transition: color 0.3s;
+}
+
+.c-menu-hamburger-text-list__main{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.c-menu-hamburger-text-list__sub{
+    font-size: 10px;
+    line-height: 2;
+}
+
+.c-menu-hamburger-text-list a:hover {
+  color: var(--gyoza-red);
+}
+
+/* ハンバーガー ここまで ↑------------------ */
 
 
 /* レイアウト*/
@@ -682,6 +865,10 @@ img {
         flex: 48;
     }
 
+    /* ハンバガーメニュー を消す */
+    .c-menu-wrapper{
+        display: none;
+    }
 }
 
 
