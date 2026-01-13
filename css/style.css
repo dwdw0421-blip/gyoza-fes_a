@@ -42,10 +42,31 @@ img {
     display: block;
 }
 
+/* hover設定 */
+
 .c-btn--yellow:hover {
     transition-duration: .4s;
-    transform: scale(1.1);
+    transform: scale(0.9);
 }
+
+
+.c-btn__top:hover {
+    filter: invert(100%);
+}
+
+
+.c-logo:hover,
+.c-nav li:hover,
+.l-footer a:hover,
+.c-map-card:hover,
+.c-news__detail dd :hover,
+.c-news-return__link :hover,
+.l-faq-section--venue-map:hover,
+.l-faq-section__answer--under:hover {
+    filter: brightness(1.15);
+    opacity: 0.4;
+}
+
 
 .c-btn__top {
     position: fixed;
@@ -60,9 +81,6 @@ img {
     width: clamp(60px, 36.408px + 6.291vw, 127px);
 }
 
-.c-btn__top:hover {
-    filter: invert(100%);
-}
 
 
 /* 赤文字タイトル共通設定 */
@@ -117,12 +135,6 @@ img {
     font-family: "Josefin Sans", serif;
     font-size: clamp(20px, 15.775px + 1.127vw, 32px);
     font-weight: bold;
-}
-
-.c-logo:hover,
-.c-nav li:hover {
-    filter: brightness(1.15);
-    opacity: 0.4;
 }
 
 @media screen and (max-width: 768px) {
@@ -192,12 +204,6 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-/* hover */
-.l-footer a:hover {
-    filter: brightness(1.15);
-    opacity: 0.4;
 }
 
 
@@ -806,12 +812,6 @@ img {
     text-decoration-style: dotted;
 }
 
-/* リンクのマウスオーバーで明るさと透明度の変化 */
-.c-map-card:hover {
-    filter: brightness(1.15);
-    opacity: 0.4;
-}
-
 /* ブース番号と商品名を横並びして間にgap */
 .c-map-card-list {
     display: flex;
@@ -891,11 +891,6 @@ img {
     text-decoration: underline solid var(--gyoza-black) 1px;
 }
 
-.c-news__detail dd :hover {
-    filter: brightness(1.15);
-    opacity: 0.4;
-}
-
 @media screen and (max-width:768px) {
     .l-news__list {
         gap: 20px;
@@ -928,10 +923,6 @@ img {
     text-decoration: underline solid var(--gyoza-black) 1px;
 }
 
-.c-news-return__link :hover {
-    filter: brightness(1.15);
-    opacity: 0.4;
-}
 
 
 /* FAQ↓ */
@@ -998,18 +989,6 @@ img {
 .l-faq-section__answer--under {
     text-decoration: underline;
     font-weight: bold;
-}
-
-/* マップ リンクのマウスオーバー */
-.l-faq-section--venue-map:hover {
-    filter: brightness(1.15);
-    opacity: 0.4;
-}
-
-/*  contactテキスト リンクのマウスオーバー */
-.l-faq-section__answer--under:hover {
-    filter: brightness(1.15);
-    opacity: 0.4;
 }
 
 
