@@ -148,102 +148,107 @@ img {
 /*ハンバーガ―メニュー*/
 /* ここから ↓-------------------------------------- */
 .c-menu-wrapper {
-  position: relative;
+    position: relative;
 }
 
 .c-menu__icon {
-  width: 20px;
-  height: 20px;
-  position: fixed; /* ← fixedにして常に右上固定 */
-  top: 14px;
-  right: 20px;
-  cursor: pointer;
-  z-index: 3;
-  display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    /* ← fixedにして常に右上固定 */
+    top: 14px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 3;
+    display: inline-block;
 }
 
 .c-menu__icon span {
-  display: block;
-  height: 2px;
-  margin: 6px 0;
-  background: #ffffff;
-  border-radius: 1px;
-  transition: 0.4s;
+    display: block;
+    height: 2px;
+    margin: 6px 0;
+    background: #ffffff;
+    border-radius: 1px;
+    transition: 0.4s;
 }
 
 /* ハンバーガーがXに変形 */
-#menu-toggle:checked + .c-menu__icon span:nth-child(1) {
-  transform: translateY(6px) rotate(45deg);
+#menu-toggle:checked+.c-menu__icon span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
 }
-#menu-toggle:checked + .c-menu__icon span:nth-child(2) {
-  opacity: 0;
+
+#menu-toggle:checked+.c-menu__icon span:nth-child(2) {
+    opacity: 0;
 }
-#menu-toggle:checked + .c-menu__icon span:nth-child(3) {
-  transform: translateY(-10px) rotate(-45deg);
+
+#menu-toggle:checked+.c-menu__icon span:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
 }
 
 /* オーバーレイ背景 */
 .overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.5);
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.4s;
-  z-index: 1;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s;
+    z-index: 1;
 }
 
-#menu-toggle:checked ~ .overlay {
-  opacity: 1;
-  pointer-events: auto;
+#menu-toggle:checked~.overlay {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 /* メニュー本体（左から出す） */
 .c-menu-hamburger {
-  position: fixed;
-  top: 0;
-  left: -375px; /* ← 初期位置を左へ */
-  width: 375px;
-  height: 100%;
-  background: var(--gyoza-black);
-  box-shadow: 2px 0 8px rgba(0,0,0,0.2);
-  transition: left 0.4s ease;
-  z-index: 2;
+    position: fixed;
+    top: 0;
+    left: -375px;
+    /* ← 初期位置を左へ */
+    width: 375px;
+    height: 100%;
+    background: var(--gyoza-black);
+    box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+    transition: left 0.4s ease;
+    z-index: 2;
 }
 
-#menu-toggle:checked ~ .c-menu-hamburger {
-  left: 0; /* ← 開いたときは左0へ */
+#menu-toggle:checked~.c-menu-hamburger {
+    left: 0;
+    /* ← 開いたときは左0へ */
 }
 
-.c-menu-hamburger-text{
-  list-style: none;
-  padding: 60px 20px;
+.c-menu-hamburger-text {
+    list-style: none;
+    padding: 60px 20px;
 }
 
 .c-menu-hamburger-text-list {
-  margin: 15px 0;
+    margin: 15px 0;
 }
 
 .c-menu-hamburger-text-list a {
-  text-decoration: none;
-  color: var(--gyoza-white);
-  /* font-size: 16px;
+    text-decoration: none;
+    color: var(--gyoza-white);
+    /* font-size: 16px;
   font-weight: bold; */
-  transition: color 0.3s;
+    transition: color 0.3s;
 }
 
-.c-menu-hamburger-text-list__main{
+.c-menu-hamburger-text-list__main {
     font-size: 16px;
     font-weight: bold;
 }
 
-.c-menu-hamburger-text-list__sub{
+.c-menu-hamburger-text-list__sub {
     font-size: 10px;
     line-height: 2;
 }
 
 .c-menu-hamburger-text-list a:hover {
-  color: var(--gyoza-red);
+    color: var(--gyoza-red);
 }
 
 /* ハンバーガー ここまで ↑------------------ */
@@ -258,9 +263,9 @@ img {
 
 /* 768px以上の大きさの場合 */
 @media screen and (min-width:768px) {
-   
+
     /* ハンバガーメニュー を消す */
-    .c-menu-wrapper{
+    .c-menu-wrapper {
         display: none;
     }
 
@@ -574,9 +579,8 @@ img {
 .l-topmenu {
     /* ↓フレックス調整のために幅をつけた
     共通設定する際に消す */
-    max-width: 960px;
-    width: 89%;
-    /*  */
+    /* max-width: 960px; */
+    /* width: 89%; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -667,16 +671,15 @@ img {
 /* メニュー↓ */
 
 
-
-
-
 /* レイアウト*/
 /* メニューと会場MAPのラップ調整 */
-.l-menu-wrapper,
+
+/* 20260113 余白調整のため削除 */
+/* .l-menu-wrapper,
 .l-map-img-wrapper {
     width: min(960px, 89.3%);
     margin-inline: auto;
-}
+} */
 
 /* 会場MAPのブース番号と品名リストを中央よせ */
 .l-map-list-wrapper {
@@ -684,10 +687,12 @@ img {
 }
 
 /* MENUページ全体のフォント設定　共通設定に入れるか、休み明けに相談　*/
-.l-menu-main {
+
+/* 20260113 余白調整のため削除 */
+/* .l-menu-main {
     font-family: 'Zen Maru Gothic', sans-serif;
     line-height: 1.44;
-}
+} */
 
 /* MENUのsectionを全体を縦並びにしてgapをつける */
 .l-menu-list {
@@ -899,7 +904,7 @@ img {
         flex: 48;
     }
 
-    
+
 }
 
 
@@ -961,16 +966,19 @@ img {
 /* FAQ↓ */
 
 /* FAQ全体のラッピング */
-.l-faq-wrapper {
+/* 20260113 余白調整のため削除 */
+/* .l-faq-wrapper {
     width: min(960px, 89.7%);
     margin-inline: auto;
-}
+} */
 
 /* セクション別の隙間 */
-.l-faq {
+
+/* 20260113 余白調整のため削除 */
+/* .l-faq {
     display: grid;
     row-gap: 90px;
-}
+} */
 
 /* セクション内の隙間 */
 .l-faq-section {
@@ -1087,11 +1095,13 @@ img {
 
 
 /* プライバシーポリシー↓ */
+
 /* ラッパー部分あとで共通部分へ */
-.l-privacy-wrapper {
+/* 20260113 余白調整のため削除 */
+/* .l-privacy-wrapper {
     width: min(960px, 89.3%);
     margin-inline: auto;
-}
+} */
 
 /*  文章を１文字下げる*/
 .l-privacy-article__text {
