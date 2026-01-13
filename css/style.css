@@ -667,16 +667,15 @@ img {
 /* メニュー↓ */
 
 
-
-
-
 /* レイアウト*/
 /* メニューと会場MAPのラップ調整 */
-.l-menu-wrapper,
+
+/* 20260113 余白調整のため削除 */
+/* .l-menu-wrapper,
 .l-map-img-wrapper {
     width: min(960px, 89.3%);
     margin-inline: auto;
-}
+} */
 
 /* 会場MAPのブース番号と品名リストを中央よせ */
 .l-map-list-wrapper {
@@ -684,10 +683,12 @@ img {
 }
 
 /* MENUページ全体のフォント設定　共通設定に入れるか、休み明けに相談　*/
-.l-menu-main {
+
+/* 20260113 余白調整のため削除 */
+/* .l-menu-main {
     font-family: 'Zen Maru Gothic', sans-serif;
     line-height: 1.44;
-}
+} */
 
 /* MENUのsectionを全体を縦並びにしてgapをつける */
 .l-menu-list {
@@ -961,16 +962,19 @@ img {
 /* FAQ↓ */
 
 /* FAQ全体のラッピング */
-.l-faq-wrapper {
+/* 20260113 余白調整のため削除 */
+/* .l-faq-wrapper {
     width: min(960px, 89.7%);
     margin-inline: auto;
-}
+} */
 
 /* セクション別の隙間 */
-.l-faq {
+
+/* 20260113 余白調整のため削除 */
+/* .l-faq {
     display: grid;
     row-gap: 90px;
-}
+} */
 
 /* セクション内の隙間 */
 .l-faq-section {
@@ -1087,11 +1091,13 @@ img {
 
 
 /* プライバシーポリシー↓ */
+
 /* ラッパー部分あとで共通部分へ */
-.l-privacy-wrapper {
+/* 20260113 余白調整のため削除 */
+/* .l-privacy-wrapper {
     width: min(960px, 89.3%);
     margin-inline: auto;
-}
+} */
 
 /*  文章を１文字下げる*/
 .l-privacy-article__text {
