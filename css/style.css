@@ -1093,8 +1093,12 @@ img {
 /* プライバシーポリシー↓ */
 /* ラッパー部分あとで共通部分へ */
 .l-privacy-wrapper {
-    width: min(960px, 89.3%);
-    margin-inline: auto;
+    /* width: min(960px, 89.3%); */
+    /* margin-inline: auto; */
+}
+
+.l-wrapper {
+    /* background-color: pink; */
 }
 
 /*  文章を１文字下げる*/
