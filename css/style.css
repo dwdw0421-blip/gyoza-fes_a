@@ -280,7 +280,7 @@ img {
 
 .l-catchcopy-text {
     text-align: center;
-    font-size: 24px;
+    font-size: clamp(1rem, 0.824rem + 0.751vw, 1.5rem);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -297,12 +297,12 @@ img {
 }
 
 .c-catchcopy-text--big {
-    font-size: 32px;
+    font-size: clamp(1.5rem, 1.324rem + 0.751vw, 2rem);
 }
 
 .c-catchcopy-text--bold {
     font-weight: bold;
-    font-size: 32px;
+    font-size: clamp(1.5rem, 1.324rem + 0.751vw, 2rem);
 }
 
 .c-catchcopy-text--red {
