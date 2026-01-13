@@ -13,7 +13,8 @@
 body {
     background-color: var(--gyoza-beige);
     font-size: 16px;
-    font-family: "Zen Maru Gothic", serif;
+    font-family: "Zen Maru Gothic", sans-serif;
+    line-height: 1.45em;
 }
 
 img {
@@ -26,7 +27,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 180px;
+    gap: 160px;
 }
 
 /* ヘッダーの下の隙間 90pxから180pxに可変で設定 */
@@ -348,13 +349,13 @@ img {
 
 @media screen and (max-width:768px) {
     .l-hero {
-    background: url(../img/sp_hero.svg) ;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 375px;
-}
-  
+        background: url(../img/sp_hero.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 375px;
+    }
+
 }
 
 .c-gray-area {
@@ -1063,6 +1064,7 @@ img {
     border: 1px solid var(--gyoza-black);
     width: clamp(335px, 178.310px + 41.784vw, 780px);
     height: 55px;
+    padding-inline: 10px;
 }
 
 .l-form__item textarea {
