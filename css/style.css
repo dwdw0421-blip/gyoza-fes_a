@@ -45,14 +45,18 @@ img {
 .c-btn__top {
     position: fixed;
     right: clamp(20px, -8.169px + 7.512vw, 100px);
-    bottom: 100px;
+    bottom: 50px;
     border:
         4px solid var(--gyoza-beige);
     border-radius: 50%;
 }
 
 .c-btn__top img {
-    width: 127px;
+    width: clamp(60px, 36.408px + 6.291vw, 127px);
+}
+
+.c-btn__top:hover {
+    filter: invert(100%);
 }
 
 
@@ -176,6 +180,13 @@ img {
     flex-direction: column;
     align-items: center;
 }
+
+/* hover */
+.l-footer a:hover {
+    filter: brightness(1.15);
+    opacity: 0.4;
+}
+
 
 /* トップページ↓ */
 
