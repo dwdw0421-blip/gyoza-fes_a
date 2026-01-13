@@ -1064,6 +1064,7 @@ img {
     border: 1px solid var(--gyoza-black);
     width: clamp(335px, 178.310px + 41.784vw, 780px);
     height: 55px;
+    padding-inline: 10px;
 }
 
 .l-form__item textarea {
