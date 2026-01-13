@@ -348,6 +348,18 @@ img {
     border-bottom: 1px solid var(--gyoza-black);
 }
 
+.c-topnews_dl-link {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.c-topnews-link {
+    text-align: right;
+    text-decoration: underline;
+    text-decoration-thickness: 1px
+}
+
 /* toppage-news pc用 */
 
 @media screen and (min-width:768px) {
@@ -357,14 +369,37 @@ img {
     }
 }
 
-
-
-
-
-
-
 /* インフォメーション */
+.l-information {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
 
+.c-info-detail {
+    margin-bottom: 23px;
+}
+
+.c-info-title::before {
+    content: "●";
+}
+
+@media screen and (min-width:768px) {
+    .c-info-inner {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .c-info-title {
+        list-style: disc;
+        width: 40%;
+    }
+
+    .c-info-detail {
+        width: 60%;
+    }
+
+}
 
 
 
