@@ -198,12 +198,19 @@ img {
 }
 
 .c-gray-area__top {
-    font-size: clamp(32px, 15.099px + 4.507vw, 80px);
+    /* font-size: clamp(32px, 15.099px + 4.507vw, 80px); */
+    font-size: clamp(2rem, 0.944rem + 4.507vw, 5rem);
     font-weight: bold;
+    text-shadow: 1px 1px 0 var(--gyoza-black), -1px 1px 0 var(--gyoza-black), 1px -1px 0 var(--gyoza-black), -1px -1px 0 var(--gyoza-black);
+}
+
+.c-gray-area_top_sun {
+    font-size: clamp(1rem, 0.648rem + 1.502vw, 2rem);
+
 }
 
 .c-gray-area__bottom {
-    font-size: clamp(24px, 28.930px + -1.315vw, 10px);
+    font-size: clamp(0.625rem, 0.317rem + 1.315vw, 1.5rem);
     display: flex;
     gap: 50px;
     justify-content: center;
@@ -214,6 +221,11 @@ img {
     gap: 15px;
     align-items: center;
     font-weight: bold;
+}
+
+
+.c-gray-area__item dd {
+    text-shadow: 1px 1px 0 var(--gyoza-black), -1px 1px 0 var(--gyoza-black), 1px -1px 0 var(--gyoza-black), -1px -1px 0 var(--gyoza-black);
 }
 
 /* アイコンと文字を真ん中揃えにするため記述 */
@@ -228,7 +240,7 @@ img {
 /* 黄色いアイコン↓ */
 
 .c-gray-area__item img {
-    width: 50px;
+    width: clamp(1.875rem, 1.435rem + 1.878vw, 3.125rem);
 }
 
 .c-gray-area__bottom dt {
