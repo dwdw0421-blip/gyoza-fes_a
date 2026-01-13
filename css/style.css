@@ -644,17 +644,27 @@ img {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 100%;
 }
 
 
 .c-news__detail {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
 }
 
-.c-news__detail :hover {
+.c-news__detail dd {
+    width: max(416px);
+}
+
+.c-news__detail dd :hover {
     text-decoration: underline solid var(--gyoza-black) 1px;
+}
+
+@media screen and (max-width:768px) {
+    .l-news__list {
+        gap: 20px;
+    }
 }
 
 /* ニュース詳細 */
