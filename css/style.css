@@ -29,7 +29,6 @@ img {
     align-items: center;
     /* 80pxから160pxまで可変 */
     gap: clamp(5rem, 2.799rem + 9.39vw, 11.25rem);
-    ;
 }
 
 /* ヘッダーの下の隙間 90pxから180pxに可変で設定 */
@@ -41,7 +40,7 @@ img {
 
 .c-btn--yellow:hover {
     transition-duration: .4s;
-    transform: scale(0.9);
+    transform: scale(1.1);
 }
 
 
@@ -59,7 +58,8 @@ img {
 .c-news__detail dd :hover,
 .c-news-return__link :hover,
 .l-faq-section--venue-map:hover,
-.l-faq-section__answer--under:hover {
+.l-faq-section__answer--under:hover,
+.c-info__map-link:hover {
     filter: brightness(1.15);
     opacity: 0.4;
 }
@@ -584,6 +584,10 @@ img {
 
 .c-info--small {
     font-size: clamp(16px, 13.183px + 0.751vw, 24px);
+}
+
+.c-info__map-link {
+    text-decoration: underline solid var(--gyoza-black) 1px;
 }
 
 @media screen and (min-width:768px) {
