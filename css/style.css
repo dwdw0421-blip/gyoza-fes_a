@@ -28,7 +28,8 @@ img {
     flex-direction: column;
     align-items: center;
     /* 80pxから160pxまで可変 */
-    gap: clamp(5rem, 2.799rem + 9.39vw, 11.25rem);;
+    gap: clamp(5rem, 2.799rem + 9.39vw, 11.25rem);
+    ;
 }
 
 /* ヘッダーの下の隙間 90pxから180pxに可変で設定 */
@@ -388,13 +389,13 @@ img {
 .c-gray-area__bottom {
     font-size: clamp(0.625rem, 0.317rem + 1.315vw, 1.5rem);
     display: flex;
-    gap: 50px;
+    gap: clamp(0.625rem, -0.255rem + 3.756vw, 3.125rem);
     justify-content: center;
 }
 
 .c-gray-area__item {
     display: flex;
-    gap: 15px;
+    gap: clamp(0.313rem, 0.092rem + 0.939vw, 0.938rem);
     align-items: center;
     font-weight: bold;
 }
@@ -453,7 +454,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 180px;
+    gap: clamp(5.625rem, 3.644rem + 8.451vw, 11.25rem);
 }
 
 .l-catchcopy {
