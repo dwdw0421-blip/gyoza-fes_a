@@ -90,6 +90,10 @@ img {
     width: clamp(60px, 36.408px + 6.291vw, 127px);
 }
 
+.c-btn--black>p {
+    text-transform: uppercase;
+}
+
 
 
 /* 赤文字タイトル共通設定 */
