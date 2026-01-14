@@ -591,23 +591,18 @@ img {
 
 /* TOP-Menu */
 .l-topmenu {
-    /* ↓フレックス調整のために幅をつけた
-    共通設定する際に消す */
-    /* max-width: 960px; */
-    /* width: 89%; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 80px;
+    gap: clamp(40px, 25.915px + 3.756vw, 80px);
 }
-
 
 .c-topmenu {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    column-gap: max(46px);
-    row-gap: 74px;
+    column-gap: min(80px);
+    row-gap: 50px;
 }
 
 .c-topmenu__card {
