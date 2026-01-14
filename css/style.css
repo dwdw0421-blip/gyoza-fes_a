@@ -104,7 +104,6 @@ img {
     font-weight: bold;
     color: var(--gyoza-red);
     text-align: center;
-    line-height: 1;
     display: flex;
     flex-direction: column;
     text-transform: uppercase;
