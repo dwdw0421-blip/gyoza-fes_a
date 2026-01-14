@@ -456,6 +456,13 @@ img {
     gap: clamp(5.625rem, 3.644rem + 8.451vw, 11.25rem);
 }
 
+.l-top-box {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(40px, 25.915px + 3.756vw, 80px);
+    width: 100%;
+}
+
 .l-catchcopy {
     display: flex;
     flex-direction: column;
@@ -484,15 +491,6 @@ img {
     gap: 40px;
 }
 
-.c-sec-title {
-    font-size: clamp(20px, 10.141px + 2.629vw, 48px);
-    font-weight: bold;
-    color: var(--gyoza-red);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 .c-catchcopy-text--big {
     font-size: clamp(1.5rem, 1.324rem + 0.751vw, 2rem);
 }
@@ -508,12 +506,6 @@ img {
 
 /* TOP PAGE-News */
 
-.l-topnews {
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
-    width: 100%;
-}
 
 .l-topnews-inner {
     background-color: var(--gyoza-white);
@@ -555,11 +547,7 @@ img {
 }
 
 /* インフォメーション */
-.l-information {
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
-    width: 100%;
+.c-info {
     font-size: clamp(24px, 21.183px + 0.751vw, 32px);
 }
 
@@ -607,11 +595,9 @@ img {
 
 
 /* TOP-Menu */
+
 .l-topmenu {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: clamp(40px, 25.915px + 3.756vw, 80px);
 }
 
 .c-topmenu {
@@ -664,18 +650,11 @@ img {
     height: clamp(201px, 68.254px + 35.399vw, 578px);
 }
 
-.c-access {
+.c-access-text {
     display: grid;
     justify-content: center;
     grid-template-columns: 128px clamp(207px, 85.521px + 32.394vw, 552px);
     row-gap: 30px;
-}
-
-.l-access {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
 }
 
 
