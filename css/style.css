@@ -59,7 +59,9 @@ img {
 .c-news-return__link :hover,
 .l-faq-section--venue-map:hover,
 .l-faq-section__answer--under:hover,
-.c-info__map-link:hover {
+.c-info__map-link:hover,
+.c-logo:hover,
+.c-nav li:hover {
     filter: brightness(1.15);
     opacity: 0.4;
 }
@@ -144,11 +146,6 @@ img {
     font-weight: bold;
 }
 
-.c-logo:hover,
-.c-nav li:hover {
-    filter: brightness(1.15);
-    opacity: 0.4;
-}
 
 /*ハンバーガ―メニュー*/
 /* ここから ↓-------------------------------------- */
