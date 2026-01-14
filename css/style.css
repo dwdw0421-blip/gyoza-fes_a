@@ -366,12 +366,13 @@ img {
     background-color: rgba(19, 26, 18, 0.6);
     color: var(--gyoza-white);
     width: 100%;
-    padding-block: 30px;
+    padding-block: clamp(0.625rem, 0.185rem + 1.878vw, 1.875rem);
     display: flex;
     flex-direction: column;
     gap: 5px;
     align-items: center;
     font-family: "Noto Sans JP", serif;
+    line-height: normal;
 }
 
 .c-gray-area__top {
@@ -379,6 +380,7 @@ img {
     font-size: clamp(2rem, 0.944rem + 4.507vw, 5rem);
     font-weight: bold;
     text-shadow: 1px 1px 0 var(--gyoza-black), -1px 1px 0 var(--gyoza-black), 1px -1px 0 var(--gyoza-black), -1px -1px 0 var(--gyoza-black);
+
 }
 
 .c-gray-area_top_sun {
