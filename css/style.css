@@ -513,7 +513,7 @@ img {
     display: flex;
     flex-direction: column;
     gap: 80px;
-
+    width: 100%;
 }
 
 .l-topnews-inner {
@@ -531,7 +531,7 @@ img {
 .c-news-detail {
     display: inline-block;
     margin-bottom: 20px;
-    border-bottom: 1px solid var(--gyoza-black);
+    text-decoration: underline solid var(--gyoza-black) 1px;
 }
 
 .c-topnews_dl-link {
