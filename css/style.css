@@ -14,7 +14,7 @@ body {
     background-color: var(--gyoza-beige);
     font-size: 16px;
     font-family: "Zen Maru Gothic", sans-serif;
-    line-height: 1.45em;
+    line-height: 1.45;
 }
 
 img {
@@ -515,7 +515,7 @@ img {
     display: flex;
     flex-direction: column;
     gap: 80px;
-
+    width: 100%;
 }
 
 .l-topnews-inner {
@@ -533,7 +533,7 @@ img {
 .c-news-detail {
     display: inline-block;
     margin-bottom: 20px;
-    border-bottom: 1px solid var(--gyoza-black);
+    text-decoration: underline solid var(--gyoza-black) 1px;
 }
 
 .c-topnews_dl-link {
@@ -562,14 +562,28 @@ img {
     display: flex;
     flex-direction: column;
     gap: 80px;
+    width: 100%;
+    font-size: clamp(24px, 21.183px + 0.751vw, 32px);
 }
 
 .c-info-detail {
     margin-bottom: 23px;
 }
 
+.c-info-title {
+    font-weight: normal;
+}
+
 .c-info-title::before {
     content: "●";
+}
+
+.c-info--bold {
+    font-weight: bold;
+}
+
+.c-info--small {
+    font-size: clamp(16px, 13.183px + 0.751vw, 24px);
 }
 
 @media screen and (min-width:768px) {
@@ -593,23 +607,18 @@ img {
 
 /* TOP-Menu */
 .l-topmenu {
-    /* ↓フレックス調整のために幅をつけた
-    共通設定する際に消す */
-    /* max-width: 960px; */
-    /* width: 89%; */
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 80px;
+    gap: clamp(40px, 25.915px + 3.756vw, 80px);
 }
-
 
 .c-topmenu {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    column-gap: max(46px);
-    row-gap: 74px;
+    column-gap: min(80px);
+    row-gap: 50px;
 }
 
 .c-topmenu__card {
