@@ -14,7 +14,7 @@ body {
     background-color: var(--gyoza-beige);
     font-size: 16px;
     font-family: "Zen Maru Gothic", sans-serif;
-    line-height: 1.45em;
+    line-height: 1.45;
 }
 
 img {
@@ -560,14 +560,28 @@ img {
     display: flex;
     flex-direction: column;
     gap: 80px;
+    width: 100%;
+    font-size: clamp(24px, 21.183px + 0.751vw, 32px);
 }
 
 .c-info-detail {
     margin-bottom: 23px;
 }
 
+.c-info-title {
+    font-weight: normal;
+}
+
 .c-info-title::before {
     content: "●";
+}
+
+.c-info--bold {
+    font-weight: bold;
+}
+
+.c-info--small {
+    font-size: clamp(16px, 13.183px + 0.751vw, 24px);
 }
 
 @media screen and (min-width:768px) {
