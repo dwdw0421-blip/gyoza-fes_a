@@ -159,9 +159,8 @@ img {
 .c-menu__icon {
     width: 20px;
     height: 20px;
-    position: fixed;
-    /* ← fixedにして常に右上固定 */
-    top: 14px;
+    position: absolute;
+    top: -45px;
     right: 20px;
     cursor: pointer;
     z-index: 3;
