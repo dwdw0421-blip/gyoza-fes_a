@@ -716,9 +716,9 @@ img {
 }
 
 /* MENUセクションとMAPセクションの間隔をつける */
-.l-menu+* {
+/* .l-menu+* {
     margin-block-start: 80px;
-}
+} */
 
 /* 会場MAPの品名リストを縦並びにして、fit-content;でボックスをテキスト幅に合わせ　gap */
 .l-map-list {
@@ -766,7 +766,7 @@ img {
 
 /* メニューの次の要素とのgap調整 */
 .c-menu-title--menuGap+* {
-    margin-block-start: 80px;
+    margin-block-start: clamp(80px, 51.83px + 7.51vw, 160px);
 }
 
 /* 商品名のグループと写真の間にgapを入れる */
