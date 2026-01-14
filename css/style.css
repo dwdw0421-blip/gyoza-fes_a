@@ -991,6 +991,12 @@ img {
 .l-faq-section {
     display: grid;
     row-gap: 30px;
+    
+}
+/* 各セクションを左寄せ */
+.l-wrapper-child{
+    display: grid;
+    justify-content: start;
 }
 
 /* 各セクション 赤字Qの後の隙間 */
