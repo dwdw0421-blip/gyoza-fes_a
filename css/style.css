@@ -80,7 +80,7 @@ img {
 
 .c-btn__top {
     position: fixed;
-    right: clamp(20px, -8.169px + 7.512vw, 100px);
+    right: clamp(1.25rem, -0.511rem + 7.512vw, 6.25rem);
     bottom: 50px;
     border:
         4px solid var(--gyoza-beige);
@@ -88,7 +88,7 @@ img {
 }
 
 .c-btn__top img {
-    width: clamp(60px, 36.408px + 6.291vw, 127px);
+    width: clamp(3.75rem, 2.276rem + 6.291vw, 7.938rem);
 }
 
 .c-btn--black>p {
@@ -137,7 +137,7 @@ img {
 .l-header {
     background-color: var(--gyoza-black);
     color: var(--gyoza-white);
-    height: clamp(50px, 29.930px + 5.352vw, 107px);
+    height: clamp(3.125rem, 1.871rem + 5.352vw, 6.688rem);
 }
 
 .c-logo {
@@ -146,7 +146,7 @@ img {
 
 .c-nav li {
     font-family: "Josefin Sans", serif;
-    font-size: clamp(20px, 15.775px + 1.127vw, 32px);
+    font-size: clamp(1.25rem, 0.986rem + 1.127vw, 2rem);
     font-weight: bold;
 }
 
@@ -288,7 +288,7 @@ img {
     align-items: center;
     gap: 60px;
     padding-block: 35px;
-    margin-top: clamp(90px, 5.986px + 11.737vw, 180px);
+    margin-top: clamp(5.625rem, 3.644rem + 8.451vw, 11.25rem);
 }
 
 .l-fotter__contact {
@@ -304,7 +304,7 @@ img {
     gap: 15px;
     border: 1px solid var(--gyoza-white);
     border-radius: 50px;
-    width: clamp(151px, 126.704px + 6.479vw, 220px);
+    width: clamp(9.438rem, 7.919rem + 6.479vw, 13.75rem);
     padding-block: 5px;
 }
 
@@ -462,7 +462,7 @@ img {
 .l-top-box {
     display: flex;
     flex-direction: column;
-    gap: clamp(40px, 25.915px + 3.756vw, 80px);
+    gap: clamp(2.5rem, 1.620rem + 3.756vw, 5rem);
     width: 100%;
 }
 
@@ -650,13 +650,13 @@ img {
 /* TOP-ACCESS */
 .c-map {
     width: 100%;
-    height: clamp(201px, 68.254px + 35.399vw, 578px);
+    height: clamp(12.563rem, 4.266rem + 35.399vw, 36.125rem);
 }
 
 .c-access-text {
     display: grid;
     justify-content: center;
-    grid-template-columns: 128px clamp(207px, 85.521px + 32.394vw, 552px);
+    grid-template-columns: clamp(12.938rem, 5.345rem + 32.394vw, 34.5rem);
     row-gap: 30px;
 }
 
@@ -1076,7 +1076,7 @@ img {
 .c-form__box {
     background-color: var(--gyoza-white);
     border: 1px solid var(--gyoza-black);
-    width: clamp(335px, 178.310px + 41.784vw, 780px);
+    width: clamp(20.938rem, 11.144rem + 41.784vw, 48.75rem);
     height: 55px;
     padding-inline: 20px;
 }
