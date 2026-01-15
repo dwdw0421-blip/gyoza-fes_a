@@ -472,7 +472,8 @@ img {
 .l-catchcopy {
     display: flex;
     flex-direction: column;
-    gap: 100px;
+    gap: clamp(2.5rem, 1.180rem + 5.634vw, 6.25rem);
+    ;
 }
 
 .c-catchcopy-title {
