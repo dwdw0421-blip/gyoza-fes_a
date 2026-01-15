@@ -236,8 +236,6 @@ img {
 .c-menu-hamburger-text-list a {
     text-decoration: none;
     color: var(--gyoza-white);
-    /* font-size: 16px;
-  font-weight: bold; */
     transition: color 0.3s;
 }
 
@@ -679,27 +677,12 @@ img {
 
 
 /* レイアウト*/
-/* メニューと会場MAPのラップ調整 */
-
-/* 20260113 余白調整のため削除 */
-/* .l-menu-wrapper,
-.l-map-img-wrapper {
-    width: min(960px, 89.3%);
-    margin-inline: auto;
-} */
 
 /* 会場MAPのブース番号と品名リストを中央よせ */
 .l-map-list-wrapper {
     margin-inline: auto;
 }
 
-/* MENUページ全体のフォント設定　共通設定に入れるか、休み明けに相談　*/
-
-/* 20260113 余白調整のため削除 */
-/* .l-menu-main {
-    font-family: 'Zen Maru Gothic', sans-serif;
-    line-height: 1.44;
-} */
 
 /* MENUのsectionを全体を縦並びにしてgapをつける */
 .l-menu-list {
@@ -708,10 +691,6 @@ img {
     row-gap: clamp(80px, 51.83px + 7.51vw, 160px);
 }
 
-/* MENUセクションとMAPセクションの間隔をつける */
-/* .l-menu+* {
-    margin-block-start: 80px;
-} */
 
 /* 会場MAPの品名リストを縦並びにして、fit-content;でボックスをテキスト幅に合わせ　gap */
 .l-map-list {
@@ -731,24 +710,6 @@ img {
 
 /* ------------------------------------------- */
 /* MENU　コンポーネント */
-
-/* 見出し　ＭＥＮＵページ用のクラス名にしてます */
-/* 共通設定に入れるか休み明けに相談 */
-/* h2のタイトル */
-/* .c-menu-title__main {
-    font-size: 32px;
-    font-weight: bold;
-    color: var(--gyoza-red);
-    text-align: center;
-    line-height: 1;
-} */
-
-/* ｐのサブタイトル */
-/* .c-menu-title__sub {
-    font-size: 16px;
-    text-align: center;
-    line-height: 1;
-} */
 
 /* タイトルの間隔調整 */
 .c-menu-title {
@@ -972,20 +933,6 @@ img {
 
 /* FAQ↓ */
 
-/* FAQ全体のラッピング */
-/* 20260113 余白調整のため削除 */
-/* .l-faq-wrapper {
-    width: min(960px, 89.7%);
-    margin-inline: auto;
-} */
-
-/* セクション別の隙間 */
-
-/* 20260113 余白調整のため削除 */
-/* .l-faq {
-    display: grid;
-    row-gap: 90px;
-} */
 
 /* セクション内の隙間 */
 .l-faq-section {
@@ -1109,13 +1056,6 @@ img {
 
 
 /* プライバシーポリシー↓ */
-
-/* ラッパー部分あとで共通部分へ */
-/* 20260113 余白調整のため削除 */
-/* .l-privacy-wrapper {
-    width: min(960px, 89.3%);
-    margin-inline: auto;
-} */
 
 /*  文章を１文字下げる*/
 .l-privacy-article__text {
