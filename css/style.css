@@ -896,7 +896,7 @@ img {
 
 /* ニュース↓ */
 .l-news__list {
-    width: 100%;
+    width: min(100% 525px);
     display: flex;
     flex-direction: column;
     gap: 10px;
