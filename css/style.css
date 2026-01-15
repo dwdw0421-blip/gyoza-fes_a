@@ -656,7 +656,7 @@ img {
 .c-access-text {
     display: grid;
     justify-content: center;
-    grid-template-columns: clamp(12.938rem, 5.345rem + 32.394vw, 34.5rem);
+    grid-template-columns: 128px clamp(207px, 85.521px + 32.394vw, 552px);
     row-gap: 30px;
 }
 
