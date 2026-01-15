@@ -17,6 +17,10 @@ body {
     line-height: 1.45;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 img {
     width: 100%;
 }
@@ -577,7 +581,7 @@ img {
     font-weight: normal;
 }
 
-.c__br--sponly{
+.c__br--sponly {
     display: block;
 }
 
@@ -596,7 +600,7 @@ img {
         width: 60%;
     }
 
-    .c__br--sponly{
+    .c__br--sponly {
         display: none;
     }
 
