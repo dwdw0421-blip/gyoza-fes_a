@@ -896,7 +896,6 @@ img {
 
 /* ニュース↓ */
 .l-news__list {
-    width: min(100% 525px);
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -917,6 +916,7 @@ img {
 @media screen and (max-width:768px) {
     .l-news__list {
         gap: 20px;
+        width: 100%;
     }
 }
 
@@ -1008,6 +1008,12 @@ img {
 .l-faq-section__answer--under {
     text-decoration: underline;
     font-weight: bold;
+}
+
+@media screen and (max-width:768px) {
+    .l-faq-section {
+        width: 100%;
+    }
 }
 
 
