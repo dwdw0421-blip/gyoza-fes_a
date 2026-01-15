@@ -991,10 +991,11 @@ img {
 .l-faq-section {
     display: grid;
     row-gap: 30px;
-    
+
 }
+
 /* 各セクションを左寄せ */
-.l-wrapper-child{
+.l-wrapper-child {
     display: grid;
     justify-content: start;
 }
@@ -1076,11 +1077,12 @@ img {
     border: 1px solid var(--gyoza-black);
     width: clamp(335px, 178.310px + 41.784vw, 780px);
     height: 55px;
-    padding-inline: 10px;
+    padding-inline: 20px;
 }
 
 .l-form__item textarea {
     height: 186px;
+    padding-block: 20px;
 }
 
 .c-contact__text {
