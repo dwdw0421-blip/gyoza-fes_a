@@ -574,6 +574,11 @@ img {
 
 .c-info__map-link {
     text-decoration: underline solid var(--gyoza-black) 1px;
+    font-weight: normal;
+}
+
+.c__br--sponly{
+    display: block;
 }
 
 @media screen and (min-width:768px) {
@@ -589,6 +594,10 @@ img {
 
     .c-info-detail {
         width: 60%;
+    }
+
+    .c__br--sponly{
+        display: none;
     }
 
 }
