@@ -831,11 +831,11 @@ img {
     text-decoration-style: dotted;
 }
 
-/* ブース番号と商品名を横並びして間にgap */
+/* ブース番号と商品名を横並びして間にgap 10pxから78pxに可変 */
 .c-map-card-list {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: clamp(0.625rem, -0.871rem + 6.38vw, 4.875rem);
 }
 
 /* ブース番号の背景色をつけパディングで大きく */
