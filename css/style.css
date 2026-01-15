@@ -958,10 +958,10 @@ img {
 
 }
 
-/* 各セクションを左寄せ */
+/* 中央寄せ */
 .l-wrapper-child {
     display: grid;
-    justify-content: start;
+    justify-content: center;
 }
 
 /* 各セクション 赤字Qの後の隙間 */
