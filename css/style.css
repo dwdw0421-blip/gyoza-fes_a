@@ -686,7 +686,6 @@ img {
 }
 
 .c-access-text {
-    border: 1px solid red;
     display: grid;
     justify-content: center;
     grid-template-columns: 128px clamp(207px, 85.521px + 32.394vw, 552px);
