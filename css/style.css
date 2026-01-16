@@ -410,6 +410,10 @@ img {
     text-shadow: 1px 1px 0 var(--gyoza-black), -1px 1px 0 var(--gyoza-black), 1px -1px 0 var(--gyoza-black), -1px -1px 0 var(--gyoza-black);
 }
 
+.c-gray-area__item p {
+    text-shadow: 1px 1px 0 var(--gyoza-black), -1px 1px 0 var(--gyoza-black), 1px -1px 0 var(--gyoza-black), -1px -1px 0 var(--gyoza-black);
+}
+
 /* アイコンと文字を真ん中揃えにするため記述 */
 .c-gray-area__location {
     display: flex;
