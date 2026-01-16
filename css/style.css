@@ -406,7 +406,11 @@ img {
 }
 
 
-.c-gray-area__item dd,p {
+.c-gray-area__item dd {
+    text-shadow: 1px 1px 0 var(--gyoza-black), -1px 1px 0 var(--gyoza-black), 1px -1px 0 var(--gyoza-black), -1px -1px 0 var(--gyoza-black);
+}
+
+.c-gray-area__item p {
     text-shadow: 1px 1px 0 var(--gyoza-black), -1px 1px 0 var(--gyoza-black), 1px -1px 0 var(--gyoza-black), -1px -1px 0 var(--gyoza-black);
 }
 
